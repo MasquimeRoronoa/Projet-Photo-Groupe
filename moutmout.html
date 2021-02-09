@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Moutmout</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="moutmout.css">
 </head>
 
 <body>
@@ -12,12 +12,11 @@
     <h1 style="text-align: center"> Rudy Wall Art </h1>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Acceuil</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#">Acceuil</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link"  href="#">Profil</a>
                     </li>
@@ -30,7 +29,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Album</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item theme">
                         <a class="nav-link" href="#">Thèmes</a>
                     </li>
                     <li class="nav-item">
@@ -53,27 +52,17 @@
     </div>
 </div>
 
-<footer>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
+<footer id="footer">
+
+    <div class="containere">
+        <input type="button" class="btn btn-success" value="<">
+        <img src="https://loremflickr.com/180/120?random=1"  alt="">
+        <img src="https://loremflickr.com/180/120?random=2"  alt="">
+        <img src="https://loremflickr.com/180/120?random=3"  alt="">
+        <img src="https://loremflickr.com/180/120?random=4"  alt="">
+        <img src="https://loremflickr.com/180/120?random=5"  alt="">
+        <img src="https://loremflickr.com/180/120?random=6"  alt="">
+        <input type="button" class="btn btn-success" value=">">
     </div>
 
 </footer>
