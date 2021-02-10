@@ -5,7 +5,8 @@
     src: url(CANON.ttf);
 }
 
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
 }
@@ -15,12 +16,14 @@ body {
     width: 100%;
 }
 
-header,footer {
+header,
+footer {
     display: block;
+    height: 17%;
 }
 
 h1 {
-    font-family: canon-font ;
+    font-family: canon-font;
     color: #bf1920;
 }
 
@@ -29,17 +32,6 @@ footer {
     position: absolute;
     padding-bottom: 2%;
     bottom: 0;
-}
-
-/*------------------------ Barre de navigation ------------------------*/
-
-.theme {
-    margin-left: 125%;
-}
-
-.nav-item {
-    margin-right: 5%;
-    padding-left: 3%;
 }
 
 /*------------------------ Gallerie ------------------------*/
