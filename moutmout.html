@@ -24,26 +24,48 @@
                     <li class="nav-item">
                         <a class="nav-link"  href="#">PROFIL</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">TECHNIQUES</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn">TECHNIQUES</a>
+                        <div class="dropdown-content">
+                            <a href="#">HDR</a>
+                            <a href="#">High Key / Low Key</a>
+                            <a href="#">High speed</a>
+                            <a href="#">Studio</a>
+                            <a href="#">Pose longue</a>
+                            <a href="#">Tilt Shift</a>
+                            <a href="#">Light Painting</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CATEGORIES</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn">CATEGORIES</a>
+                        <div class="dropdown-content">
+                            <a href="#">Noir & Blanc</a>
+                            <a href="#">Portrait</a>
+                            <a href="#">Paysage</a>
+                            <a href="#">Architecture</a>
+                            <a href="#">Graphisme</a>
+                            <a href="#">Evenements</a>
+                            <a href="#">Boudoire</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ALBUM</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn">AUTRE</a>
+                        <div class="dropdown-content">
+                            <a href="#">Contact</a>
+                            <div class="nav-item dropdown-submenu">
+                                <a tabindex="-1" href="#" class="dropdown">Thèmes</a>
+                                <div class="dropdown-menu">
+                                    <a href="#">Sombre</a>
+                                    <a href="#">Semi-clair</a>
+                                    <a href="#">Clair</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Thèmes</a></li>
-                            <li><a class="dropdown-item" href="#">Contact</a></li>
-                        </ul>
-                    </div>
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONNEXION</a>
                     </li>
@@ -53,13 +75,42 @@
     </nav>
 </header>
 
-<div id="contain">
+<div id="contain" class="row">
 
-    <div class="col-md-6 gauche">
+    <div class="col-md-6">
+
+        <img src="https://loremflickr.com/360/240?random=1" alt="" id="picture">
+
+        <div id="EXIF">
+            <p class="pexif"> Date : <span id="date" class="infoexif"> 10/02/2021 </span> </p>
+            <p class="pexif"> Appareil : <span id="appareil" class="infoexif"> Canon 60D </span> </p>
+            <p class="pexif"> Objectif : <span id="objectif" class="infoexif"> 70-200 F2.8L </span></p>
+            <p class="pexif"> Autres : <span id="autres" class="infoexif"> F2.8, 1/60s iso 200, Flash : Non, 135mm </span></p>
+        </div>
 
     </div>
 
-    <div class="col-md-6 droite">
+    <div class="col-md-6">
+
+        <div id="Info">
+
+            <h2> Titre </h2>
+            <h4 id="headcom"> Commentaires sur la photo</h4>
+
+        </div>
+
+        <div id="com">
+            <div id="text-comm">
+                <form>
+                    <textarea cols="50" rows="4" placeholder="Ecrivez un commentaire ici ! " id="comment"></textarea>
+                    <br>
+                    <input type="submit" id="facebook" value="Facebook" class="btn btn-primary">
+                    <input type="submit" id="tweet" value="Tweeter" class="btn btn-info">
+                    <input type="submit" id="insta" value="Instagram" class="btn btn-secondary">
+                    <input type="submit" id="pint" value="Pinterest" class="btn btn-danger">
+                </form>
+            </div>
+        </div>
 
     </div>
 </div>
