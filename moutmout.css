@@ -1,3 +1,5 @@
+/*------------------------ Canon typo ------------------------*/
+
 @font-face {
     font-family: canon-font;
     src: url(CANON.ttf);
@@ -15,6 +17,12 @@ body {
 
 header,footer {
     display: block;
+    height: 17%;
+}
+
+h1 {
+    font-family: canon-font ;
+    color: #bf1920;
 }
 
 footer {
@@ -24,19 +32,16 @@ footer {
     bottom: 0;
 }
 
-.theme {
-    margin-left: 125%;
-}
+/*------------------------ Barre de navigation ------------------------*/
+
+
 
 .nav-item {
     margin-right: 5%;
     padding-left: 3%;
 }
 
-h1 {
-    font-family: canon-font ;
-    color: #bf1920;
-}
+/*------------------------ Gallerie ------------------------*/
 
 .containere {
     display: flex;
