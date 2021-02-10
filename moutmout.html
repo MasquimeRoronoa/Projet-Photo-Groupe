@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Moutmout</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="moutmout.css">
 
 </head>
 
@@ -12,26 +16,55 @@
     <h1 style="text-align: center"> Rudy Wall Art </h1>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Acceuil</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link"  href="#">Profil</a>
+                        <a class="nav-link" href="#" id="profilup">Profil</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Techniques</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn">Techniques</a>
+                        <div class="dropdown-content">
+                            <a href="#">HDR</a>
+                            <a href="#">High Key / Low Key</a>
+                            <a href="#">High speed</a>
+                            <a>Studio</a>
+                            <a>Pose longue</a>
+                            <a>Tilt Shift</a>
+                            <a>Light Painting</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catégories</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn">Catégories</a>
+                        <div class="dropdown-content">
+                            <a href="#">Noir & Blanc</a>
+                            <a href="#">Portrait</a>
+                            <a href="#">Paysage</a>
+                            <a href="#">Architecture</a>
+                            <a href="#">Graphisme</a>
+                            <a href="#">Evenements</a>
+                            <a>Boudoire</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Album</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Thèmes</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn">Autre</a>
+                        <div class="dropdown-content">
+                            <a href="#">Contact</a>
+                            <div class="nav-item dropdown-submenu">
+                                <a tabindex="-1" href="#" class="dropdown">Thèmes</a>
+                                <div class="dropdown-menu">
+                                    <a href="#">Sombre</a>
+                                    <a href="#">Semi-clair</a>
+                                    <a href="#">Clair</a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Connexion</a>
@@ -41,7 +74,17 @@
         </div>
     </nav>
 </header>
-
+<div id="profil" style="display : none">
+    <img id="profilimg" src="src/Rudy.png">
+</div>
+<div id="noir" style="display:none">
+    <img id="img1"
+         src="https://images.pexels.com/photos/57905/pexels-photo-57905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    <img id="img2"
+         src="https://img.aws.la-croix.com/2020/06/23/1201101320/Noir-Blanc-couleursdes-positions-sociales-roles-lhistoire_0_1399_934.jpg">
+    <img id="img3"
+         src="https://dyw7ncnq1en5l.cloudfront.net/optim/focus/articles/1571/photographie-noir-blanc-paysage-illustration1__908_512__overflow.jpg">
+</div>
 <div id="contain">
 
     <div class="col-md-6 gauche">
@@ -57,13 +100,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="" class="d-block w-100" alt="...">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
@@ -77,6 +120,6 @@
     </div>
 
 </footer>
-
+<script src="moumout.js"></script>
 </body>
 </html>
