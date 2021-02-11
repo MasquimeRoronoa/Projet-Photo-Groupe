@@ -3,42 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Moutmout</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="moutmout.css">
-
 </head>
 
 <body>
 <header>
     <h1 style="text-align: center"> Rudy Wall Art </h1>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Accueil</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="profilup">Profil</a>
+                        <a class="nav-link" href="#">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PROFIL</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropbtn">Techniques</a>
+                        <a class="nav-link dropbtn">TECHNIQUES</a>
                         <div class="dropdown-content">
                             <a href="#">HDR</a>
                             <a href="#">High Key / Low Key</a>
                             <a href="#">High speed</a>
-                            <a>Studio</a>
-                            <a>Pose longue</a>
-                            <a>Tilt Shift</a>
-                            <a>Light Painting</a>
+                            <a href="#">Studio</a>
+                            <a href="#">Pose longue</a>
+                            <a href="#">Tilt Shift</a>
+                            <a href="#">Light Painting</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropbtn">Catégories</a>
+                        <a class="nav-link dropbtn">CATEGORIES</a>
                         <div class="dropdown-content">
                             <a href="#">Noir & Blanc</a>
                             <a href="#">Portrait</a>
@@ -46,14 +48,23 @@
                             <a href="#">Architecture</a>
                             <a href="#">Graphisme</a>
                             <a href="#">Evenements</a>
-                            <a>Boudoire</a>
+                            <a href="#">Boudoire</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Album</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropbtn">ALBUM</a>
+                        <div class="dropdown-content">
+                            <a href="#">Animaux</a>
+                            <a href="#">Saison</a>
+                            <a href="#">Fêtes</a>
+                            <a href="#">Nature</a>
+                            <a href="#">Urbain</a>
+                            <a href="#">Sport</a>
+                            <a href="#">Nuit</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropbtn">Autre</a>
+                        <a class="nav-link dropbtn">AUTRE</a>
                         <div class="dropdown-content">
                             <a href="#">Contact</a>
                             <div class="nav-item dropdown-submenu">
@@ -66,60 +77,72 @@
                             </div>
                         </div>
                     </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Connexion</a>
+                        <a class="nav-link" href="#">CONNEXION</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-<div id="profil" style="display : none">
-    <img id="profilimg" src="src/Rudy.png">
-</div>
-<div id="noir" style="display:none">
-    <img id="img1"
-         src="https://images.pexels.com/photos/57905/pexels-photo-57905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-    <img id="img2"
-         src="https://img.aws.la-croix.com/2020/06/23/1201101320/Noir-Blanc-couleursdes-positions-sociales-roles-lhistoire_0_1399_934.jpg">
-    <img id="img3"
-         src="https://dyw7ncnq1en5l.cloudfront.net/optim/focus/articles/1571/photographie-noir-blanc-paysage-illustration1__908_512__overflow.jpg">
-</div>
-<div id="contain">
 
-    <div class="col-md-6 gauche">
+<div id="contain" class="row">
 
-    </div>
+    <div class="col-md-6">
 
-    <div class="col-md-6 droite">
+        <img src="https://loremflickr.com/360/240?random=1" alt="" id="picture">
+
+        <div id="EXIF">
+            <p class="pexif"> Date : <span id="date" class="infoexif"> 10/02/2021 </span></p>
+            <p class="pexif"> Appareil : <span id="appareil" class="infoexif"> Canon 60D </span></p>
+            <p class="pexif"> Objectif : <span id="objectif" class="infoexif"> 70-200 F2.8L </span></p>
+            <p class="pexif"> Autres : <span id="autres"
+                                             class="infoexif"> F2.8, 1/60s iso 200, Flash : Non, 135mm </span></p>
+        </div>
 
     </div>
-</div>
 
-<footer>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="" class="d-block w-100" alt="...">
+    <div class="col-md-6">
+
+        <div id="Info">
+
+            <h2> Titre </h2>
+            <h4 id="headcom"> Commentaires sur la photo</h4>
+
+        </div>
+
+        <div id="com">
+            <div id="text-comm">
+                <form>
+                    <textarea cols="50" rows="4" placeholder="Ecrivez un commentaire ici ! " id="comment"></textarea>
+                    <br>
+                    <input type="submit" id="facebook" value="Facebook" class="btn btn-primary">
+                    <input type="submit" id="tweet" value="Tweeter" class="btn btn-info">
+                    <input type="submit" id="insta" value="Instagram" class="btn btn-secondary">
+                    <input type="submit" id="pint" value="Pinterest" class="btn btn-danger">
+                </form>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
+
+    </div>
+</div>
+
+<footer id="footer">
+
+    <div class="containere">
+        <input type="button" class="btn btn-success" value="<">
+        <img src="https://loremflickr.com/180/120?random=1" alt="">
+        <img src="https://loremflickr.com/180/120?random=2" alt="">
+        <img src="https://loremflickr.com/180/120?random=3" alt="">
+        <img src="https://loremflickr.com/180/120?random=4" alt="">
+        <img src="https://loremflickr.com/180/120?random=5" alt="">
+        <img src="https://loremflickr.com/180/120?random=6" alt="">
+        <input type="button" class="btn btn-success" value=">">
     </div>
 
 </footer>
-<script src="moumout.js"></script>
+
 </body>
 </html>
