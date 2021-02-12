@@ -8,86 +8,107 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
             crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="moutmout.css">
 </head>
 
 <body>
 <header>
-    <h1 style="text-align: center"> Rudy Wall Art </h1>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ACCUEIL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PROFIL</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropbtn">TECHNIQUES</a>
-                        <div class="dropdown-content">
-                            <a href="#">HDR</a>
-                            <a href="#">High Key / Low Key</a>
-                            <a href="#">High speed</a>
-                            <a href="#">Studio</a>
-                            <a href="#">Pose longue</a>
-                            <a href="#">Tilt Shift</a>
-                            <a href="#">Light Painting</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropbtn">CATEGORIES</a>
-                        <div class="dropdown-content">
-                            <a href="#">Noir & Blanc</a>
-                            <a href="#">Portrait</a>
-                            <a href="#">Paysage</a>
-                            <a href="#">Architecture</a>
-                            <a href="#">Graphisme</a>
-                            <a href="#">Evenements</a>
-                            <a href="#">Boudoire</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropbtn">ALBUM</a>
-                        <div class="dropdown-content">
-                            <a href="#">Animaux</a>
-                            <a href="#">Saison</a>
-                            <a href="#">Fêtes</a>
-                            <a href="#">Nature</a>
-                            <a href="#">Urbain</a>
-                            <a href="#">Sport</a>
-                            <a href="#">Nuit</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropbtn">AUTRE</a>
-                        <div class="dropdown-content">
-                            <a href="#">Contact</a>
-                            <div class="nav-item dropdown-submenu">
-                                <a tabindex="-1" href="#" class="dropdown">Thèmes</a>
-                                <div class="dropdown-menu">
-                                    <a href="#">Sombre</a>
-                                    <a href="#">Semi-clair</a>
-                                    <a href="#">Clair</a>
+        <h1 style="text-align: center"> Rudy Wall Art </h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PROFIL</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropbtn">TECHNIQUES</a>
+                            <div class="dropdown-content">
+                                <a href="#">HDR</a>
+                                <a href="#">High Key / Low Key</a>
+                                <a href="#">High speed</a>
+                                <a href="#">Studio</a>
+                                <a href="#">Pose longue</a>
+                                <a href="#">Tilt Shift</a>
+                                <a href="#">Light Painting</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropbtn">CATEGORIES</a>
+                            <div class="dropdown-content">
+                                <a href="#">Noir & Blanc</a>
+                                <a href="#">Portrait</a>
+                                <a href="#">Paysage</a>
+                                <a href="#">Architecture</a>
+                                <a href="#">Graphisme</a>
+                                <a href="#">Evenements</a>
+                                <a href="#" id="private">Boudoire</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropbtn">ALBUM</a>
+                            <div class="dropdown-content">
+                                <a href="#">Animaux</a>
+                                <a href="#">Saison</a>
+                                <a href="#">Fêtes</a>
+                                <a href="#">Nature</a>
+                                <a href="#">Urbain</a>
+                                <a href="#">Sport</a>
+                                <a href="#">Nuit</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropbtn">AUTRE</a>
+                            <div class="dropdown-content">
+                                <a href="#">Contact</a>
+                                <div class="nav-item dropdown-submenu">
+                                    <a tabindex="-1" href="#" class="dropdown">Thèmes</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#">Sombre</a>
+                                        <a href="#">Semi-clair</a>
+                                        <a href="#">Clair</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONNEXION</a>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropbtn" id="connexion">CONNEXION</a>
+                            <div class="dropdown-content" style="right:0;">
+                                <div id="connect">
+                                    <form id="connecting">
+                                        <br>
+                                        <h4>Login :</h4>
+                                        <input type="text" id="login">
+                                        <br>
+                                        <br>
+                                        <h4>Mot de passe :</h4>
+                                        <input type="password" id="mdp">
+                                        <br>
+                                        <br>
+                                        <input type="submit" class="btn btn-success" id="submit" value="Connexion">
+                                        <br>
+                                        <br>
+                                        <p><a href=""> Mot de passe oublié ? </a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 </header>
-
 <div id="contain" class="row">
 
     <div class="col-md-6">
@@ -129,8 +150,47 @@
     </div>
 </div>
 
-<footer id="footer">
+<div id="formContact" style="display: none">
+    <form>
+        Sélectionnez un sujet : <select>
+        <option>Demander un devis</option>
+        <option>Demander un mot de passe et un identifiant</option>
+        <option>Demander des informations</option>
+        <option>Autre demande</option>
+    </select><br><br>
 
+        <input type="text" placeholder="Votre prénom">
+        <input type="text" placeholder="Votre nom">
+        <input type="text" placeholder="Votre email"><br><br>
+
+        <textarea placeholder="Rédigez votre message" rows="4" cols="60"></textarea><br>
+
+        <input type="checkbox"> Je certifie avoir plus de 18 ans<br><br>
+
+        <button>Envoyer ma demande</button>
+    </form>
+</div>
+
+<div id="biographie" style="display: none">
+    <div>
+        <img id="img1" src="photoprofil.jpg">
+    </div>
+    <div class="infosbio">
+        <h2>Rudy Lesur</h2>
+        <p>A propos de moi :</p>
+        <p>rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy</p>
+    </div>
+</div>
+<div class="container" id="inscriptiondiv">
+    <form id="inscription">
+    <input type="text" id="pseudo" placeholder="pseudo">
+    <input type="password" id="passworde" placeholder="password">
+        <input class="btn-warning" type="submit" value="inscrit">
+    </form>
+</div>
+
+
+<footer id="footer">
     <div class="containere">
         <input type="button" class="btn btn-success" value="<">
         <img src="https://loremflickr.com/180/120?random=1" alt="">
@@ -141,8 +201,7 @@
         <img src="https://loremflickr.com/180/120?random=6" alt="">
         <input type="button" class="btn btn-success" value=">">
     </div>
-
 </footer>
-
+<script src="moutmoutmout.js"></script>
 </body>
 </html>

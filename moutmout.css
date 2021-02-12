@@ -149,3 +149,30 @@ img {
 .dropdown-submenu:hover > .dropdown-menu {
     display: block;
 }
+
+/* FORMULAIRE DE CONTACT*/
+#formContact {
+    margin: 30px;
+}
+
+input {
+    margin: 5px;
+}
+
+/* PROFIL / BIOGRAPHIE */
+#img1 {
+    margin: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+
+#biographie {
+    padding: 20px;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.infosbio {
+    margin: 20px;
+}
