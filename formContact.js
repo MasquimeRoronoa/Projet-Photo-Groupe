@@ -1,11 +1,9 @@
 $(document).ready(function () {
 
-	var showForm = $('#form').show()
-	var hideForm = $('#form').hide()
-
 	$('#btnContact').click(() =>{
 		$('#contain').hide()
 		$('#footer').hide()
+		$('#biographie').hide()
 		$('#form').show()
 	})
 
