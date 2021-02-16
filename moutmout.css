@@ -1,12 +1,11 @@
 /*------------------------ Canon typo ------------------------*/
-
+/* Mathieu & Maxime*/
 @font-face {
     font-family: canon-font;
     src: url(CANON.ttf);
 }
 
-html,
-body {
+html, body {
     padding: 0;
     margin: 0;
 }
@@ -16,22 +15,110 @@ body {
     width: 100%;
 }
 
-header,
-footer {
+header, footer {
     display: block;
     height: 17%;
 }
 
 h1 {
     font-family: canon-font;
-    color: #bf1920;
+    color: #C00000;
 }
 
 footer {
     width: 100%;
-    position: absolute;
-    padding-bottom: 2%;
+    position: relative;
+    padding-bottom: 1%;
+    padding-top: 1%;
     bottom: 0;
+    background: #F5F6F6;
+}
+
+#containere {
+    position: relative;
+}
+
+#contain {
+    margin-top: 2%;
+}
+
+#comment {
+    margin-bottom: 2%;
+}
+
+#headcom {
+    margin-bottom: 4%;
+}
+
+#picture {
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+#EXIF {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.pexif {
+    font-weight: bold;
+}
+
+.infoexif {
+    font-weight: normal;
+}
+
+#connexion {
+    color: #0074BD;
+}
+
+.bbleu:hover {
+    background: #001EBD;
+}
+
+#mdp {
+    color: #0074BD;
+}
+
+.insc {
+    border-radius: 5px;
+}
+
+.bbleu {
+    background: #0074BD;
+    color: white;
+}
+
+/*------------------------ Barre de navigation ------------------------*/
+
+.navbar {
+    background: #F5F6F6;
+}
+
+#generalMenu span{
+    color : #C00000;
+}
+#generalMenu span:hover{
+    color : #C00000;
+    opacity: 0.7;
+}
+
+#generalMenu a{
+    color : #0074BD;
+}
+#generalMenu a:hover{
+    color : #0074BD;
+    opacity: 0.7;
+}
+
+#generalMenu #black{
+    color : black;
+}
+#generalMenu #grey{
+    color : #939598;
+}
+#generalMenu #white{
+    color : white;
 }
 
 /*------------------------ Gallerie ------------------------*/
@@ -47,4 +134,92 @@ footer {
 img {
     margin-right: 1%;
     margin-left: 1%;
+}
+
+
+/*----------------MARINE & MAXENCE --------------------*/
+
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: -0%;
+    left: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: -1px;
+    margin-left: -0px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* FORMULAIRE DE CONTACT*/
+#formContact {
+    margin: 30px;
+}
+
+input {
+    margin: 5px;
+}
+
+/* PROFIL / BIOGRAPHIE */
+#img1 {
+    margin: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+
+#biographie {
+    padding: 20px;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.infosbio {
+    margin: 20px;
 }
