@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Moutmout</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-            crossorigin="anonymous"></script>
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
-            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="moutmout.css">
 </head>
 
 <body>
-    <header class="row" id="headerPage">
-        <div class="col-12" id="title&logo">
-            <h1 style="text-align: center"> Rudy Wall Art </h1>
-        </div>
+    <header>
+        <h1 style="text-align: center"> Rudy Wall Art </h1>
         <div class="col-12" id="menu">
             <nav class="navbar navbar-expand-md" id="generalMenu">
                 <div class="container-fluid">
@@ -26,236 +25,232 @@
                             <a class="nav-link" href="index.html"><i class="fas fa-home fa-lg"></i></a>
                         </div>
                     </div>
-                    <button class="navbar-toggler nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <div class="nav-link">
-                            <i class="fas fa-angle-double-down"></i>
-                        </div>
+                    <button class="navbar-toggler bouton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <div class="col-12 row d-flex justify-content-around" id="accordeon">
-
-                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
-                                <button type="button" class="btn accordeon-expand-btn" data-bs-target="#aboutMe" aria-expanded="false" aria-controls="aboutMe">
-                                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="A propos de moi"> <i class="far fa-address-card fa-lg"></i></span>
-                                </button> 
-                                <div class="collapse" id="aboutMe">
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Mon portrait</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Mes prestations</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">CGU / CGV</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                    <div class="collapse navbar-collapse">
+                        <button class="navbar-toggler nav-link bouton" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <div class="nav-link">
+                                <i class="fas fa-angle-double-down"></i>
                             </div>
-                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
-                                <button type="button" class="btn accordeon-expand-btn" data-bs-target="#technicalMenu" aria-expanded="false" aria-controls="technicalMenu">
-                                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="Les techniques utilisées "> <i class="far fa-images fa-lg"></i></span>
-                                </button>
-                                <div class="collapse" id="technicalMenu">
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">HDR</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">HK/LK</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">High Speed</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Studio</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Tilt Shift</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Pose Longue</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Light Painting</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
-                                <button type="button" class="btn accordeon-expand-btn" data-bs-target="#galerieMenu" aria-expanded="false" aria-controls="galerieMenu">
-                                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="Les catégories de photos"> <i class="fas fa-film fa-lg"></i> </span>
-                                </button>
-                                <div class="collapse" id="galerieMenu">
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">noir et blanc</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Portrait</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Paysage</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Architecture</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Graphisme</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Evenement</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Boudoir</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
-                                <button type="button" class="btn accordeon-expand-btn" data-bs-target="#albumMenu" aria-expanded="false" aria-controls="albumMenu">
-                                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="Les albums"> <i class="fas fa-person-booth fa-lg"></i></span>
-                                </button>
-                                <div class="collapse" id="albumMenu">
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">noel</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">la fin du monde</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Vive les vacances</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">bla bla</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
-                                <button type="button" class="btn accordeon-expand-btn" data-bs-target="#themeMenu" aria-expanded="false" aria-controls="themeMenu">
-                                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="Thèmes"> <i class="fas fa-paint-brush fa-flip-both"></i></span>
-                                </button>
-                                <div class="collapse" id="themeMenu">
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                            <span data-bs-toggle="tooltip" data-bs-placement="right" title="Theme noir" class="nav-link" id="black"><i class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <span data-bs-toggle="tooltip" data-bs-placement="right" title="Theme gris" class="nav-link" id="grey"><i class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <span data-bs-toggle="tooltip" data-bs-placement="right" title="Theme blanc" class="nav-link" id="white"><i class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
-                                <button type="button" class="btn accordeon-expand-btn">
-                                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="Connexion"> <i class="fas fa-fingerprint fa-lg"></i></span>
-                                </button>
-                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse btnlist">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <button type="button" class="btn accordeon-expand-btn bouton" data-bs-target="#aboutMe"
+                                        aria-expanded="false" aria-controls="aboutMe">
+                                        <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                            title="A propos de moi"> <i class="far fa-address-card fa-lg"></i></span>
+                                    </button>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <button type="button" class="btn accordeon-expand-btn bouton"
+                                        data-bs-target="#technicalMenu" aria-expanded="false"
+                                        aria-controls="technicalMenu">
+                                        <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                            title="Les techniques utilisées "> <i
+                                                class="far fa-images fa-lg"></i></span>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#">HDR</a>
+                                        <a href="#">High Key / Low Key</a>
+                                        <a href="#">High speed</a>
+                                        <a href="#">Studio</a>
+                                        <a href="#">Pose longue</a>
+                                        <a href="#">Tilt Shift</a>
+                                        <a href="#">Light Painting</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <button type="button" class="btn accordeon-expand-btn bouton" data-bs-target="#galerieMenu"
+                                        aria-expanded="false" aria-controls="galerieMenu">
+                                        <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                            title="Les catégories de photos"> <i class="fas fa-film fa-lg"></i> </span>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Noir & Blanc</a>
+                                        <a href="#">Portrait</a>
+                                        <a href="#">Paysage</a>
+                                        <a href="#">Architecture</a>
+                                        <a href="#">Graphisme</a>
+                                        <a href="#">Evenements</a>
+                                        <a href="#" id="private">Boudoire</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <button type="button" class="btn accordeon-expand-btn bouton" data-bs-target="#albumMenu"
+                                        aria-expanded="false" aria-controls="albumMenu">
+                                        <span data-bs-toggle="tooltip" data-bs-placement="right" title="Les albums"> <i
+                                                class="fas fa-person-booth fa-lg"></i></span>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Animaux</a>
+                                        <a href="#">Saison</a>
+                                        <a href="#">Fêtes</a>
+                                        <a href="#">Nature</a>
+                                        <a href="#">Urbain</a>
+                                        <a href="#">Sport</a>
+                                        <a href="#">Nuit</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <button type="button" class="btn accordeon-expand-btn bouton" data-bs-target="#themeMenu"
+                                        aria-expanded="false" aria-controls="themeMenu">
+                                        <span data-bs-toggle="tooltip" data-bs-placement="right" title="Thèmes"> <i
+                                                class="fas fa-paint-brush fa-flip-both"></i></span>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                    title="Theme noir" class="nav-link" id="black"><i
+                                                        class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                    title="Theme gris" class="nav-link" id="grey"><i
+                                                        class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                    title="Theme blanc" class="nav-link" id="white"><i
+                                                        class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <button type="button" class="btn accordeon-expand-btn bouton">
+                                        <span data-bs-toggle="tooltip" data-bs-placement="right" title="Connexion"> 
+                                            <i class="fas fa-fingerprint fa-lg"></i>
+                                        </span>
+                                    </button>
+                                    <div class="dropdown-content" style="right:0;">
+                                        <div id="connect">
+                                            <form id="connecting">
+                                                <br>
+                                                <h4>Login :</h4>
+                                                <input type="text" id="login">
+                                                <br>
+                                                <br>
+                                                <h4>Mot de passe :</h4>
+                                                <input type="password" id="mdp">
+                                                <br>
+                                                <br>
+                                                <input type="submit" class="btn bbleu" id="submit" value="Connexion">
+                                                <br>
+                                                <br>
+                                                <p><a href="" id='mdp'> Mot de passe oublié ? </a></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-<div id="contain" class="row">
+    <div id="contain" class="row">
 
-    <div class="col-md-6">
+        <div class="col-md-6">
 
-        <img src="https://loremflickr.com/360/240?random=1" alt="" id="picture">
+            <img src="https://loremflickr.com/360/240?random=1" alt="" id="picture">
 
-        <div id="EXIF">
-            <p class="pexif"> Date : <span id="date" class="infoexif"> 10/02/2021 </span></p>
-            <p class="pexif"> Appareil : <span id="appareil" class="infoexif"> Canon 60D </span></p>
-            <p class="pexif"> Objectif : <span id="objectif" class="infoexif"> 70-200 F2.8L </span></p>
-            <p class="pexif"> Autres : <span id="autres"
-                                             class="infoexif"> F2.8, 1/60s iso 200, Flash : Non, 135mm </span></p>
-        </div>
-
-    </div>
-
-    <div class="col-md-6">
-
-        <div id="Info">
-
-            <h2> Titre </h2>
-            <h4 id="headcom"> Commentaires sur la photo</h4>
-
-        </div>
-
-        <div id="com">
-            <div id="text-comm">
-                <form>
-                    <textarea cols="50" rows="4" placeholder="Ecrivez un commentaire ici ! " id="comment"></textarea>
-                    <br>
-                    <input type="submit" id="facebook" value="Facebook" class="btn btn-primary">
-                    <input type="submit" id="tweet" value="Tweeter" class="btn btn-info">
-                    <input type="submit" id="insta" value="Instagram" class="btn btn-secondary">
-                    <input type="submit" id="pint" value="Pinterest" class="btn btn-danger">
-                </form>
+            <div id="EXIF">
+                <p class="pexif"> Date : <span id="date" class="infoexif"> 10/02/2021 </span></p>
+                <p class="pexif"> Appareil : <span id="appareil" class="infoexif"> Canon 60D </span></p>
+                <p class="pexif"> Objectif : <span id="objectif" class="infoexif"> 70-200 F2.8L </span></p>
+                <p class="pexif"> Autres : <span id="autres" class="infoexif"> F2.8, 1/60s iso 200, Flash : Non, 135mm
+                    </span></p>
             </div>
+
         </div>
 
+        <div class="col-md-6">
+
+            <div id="Info">
+
+                <h2> Titre </h2>
+                <h4 id="headcom"> Commentaires sur la photo</h4>
+
+            </div>
+
+            <div id="com">
+                <div id="text-comm">
+                    <form>
+                        <textarea cols="50" rows="4" placeholder="Ecrivez un commentaire ici ! "
+                            id="comment"></textarea>
+                        <br>
+                        <input type="submit" id="facebook" value="Facebook" class="btn btn-primary">
+                        <input type="submit" id="tweet" value="Tweeter" class="btn btn-info">
+                        <input type="submit" id="insta" value="Instagram" class="btn btn-secondary">
+                        <input type="submit" id="pint" value="Pinterest" class="btn btn-danger">
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
 
-<div id="formContact" style="display: none">
-    <form>
-        Sélectionnez un sujet : <select>
-        <option>Demander un devis</option>
-        <option>Demander un mot de passe et un identifiant</option>
-        <option>Demander des informations</option>
-        <option>Autre demande</option>
-    </select><br><br>
+    <div id="formContact" style="display: none">
+        <form>
+            Sélectionnez un sujet : <select>
+                <option>Demander un devis</option>
+                <option>Demander un mot de passe et un identifiant</option>
+                <option>Demander des informations</option>
+                <option>Autre demande</option>
+            </select><br><br>
 
-        <input type="text" placeholder="Votre prénom">
-        <input type="text" placeholder="Votre nom">
-        <input type="text" placeholder="Votre email"><br><br>
+            <input type="text" placeholder="Votre prénom">
+            <input type="text" placeholder="Votre nom">
+            <input type="text" placeholder="Votre email"><br><br>
 
-        <textarea placeholder="Rédigez votre message" rows="4" cols="60"></textarea><br>
+            <textarea placeholder="Rédigez votre message" rows="4" cols="60"></textarea><br>
 
-        <input type="checkbox"> Je certifie avoir plus de 18 ans<br><br>
+            <input type="checkbox"> Je certifie avoir plus de 18 ans<br><br>
 
-        <button>Envoyer ma demande</button>
-    </form>
-</div>
-
-<div id="biographie" style="display: none">
-    <div>
-        <img id="img1" src="photoprofil.jpg">
+            <button>Envoyer ma demande</button>
+        </form>
     </div>
-    <div class="infosbio">
-        <h2>Rudy Lesur</h2>
-        <p>A propos de moi :</p>
-        <p>rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy</p>
+
+    <div id="biographie" style="display: none">
+        <div>
+            <img id="img1" src="photoprofil.jpg">
+        </div>
+        <div class="infosbio">
+            <h2>Rudy Lesur</h2>
+            <p>A propos de moi :</p>
+            <p>rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy</p>
+        </div>
     </div>
-</div>
-<div class="container" id="inscriptiondiv">
-    <form id="inscription">
-    <input type="text" id="pseudo" placeholder="pseudo">
-    <input type="password" id="passworde" placeholder="password">
-        <input class="bbleu insc" type="submit" value="inscrit">
-    </form>
-</div>
+    <div class="container" id="inscriptiondiv">
+        <form id="inscription">
+            <input type="text" id="pseudo" placeholder="pseudo">
+            <input type="password" id="passworde" placeholder="password">
+            <input class="bbleu insc" type="submit" value="inscrit">
+        </form>
+    </div>
 
 
-<footer id="footer">
-    <div class="containere">
-        <input type="button" class="btn bbleu" value="<">
-        <img src="https://loremflickr.com/180/120?random=1" alt="">
-        <img src="https://loremflickr.com/180/120?random=2" alt="">
-        <img src="https://loremflickr.com/180/120?random=3" alt="">
-        <img src="https://loremflickr.com/180/120?random=4" alt="">
-        <img src="https://loremflickr.com/180/120?random=5" alt="">
-        <img src="https://loremflickr.com/180/120?random=6" alt="">
-        <input type="button" class="btn bbleu" value=">">
-    </div>
-</footer>
-<script src="moutmoutmout.js"></script>
-<script src="https://kit.fontawesome.com/ba31fbaee6.js" crossorigin="anonymous"></script>
+    <footer id="footer">
+        <div class="containere">
+            <input type="button" class="btn bbleu" value="<">
+            <img src="https://loremflickr.com/180/120?random=1" alt="">
+            <img src="https://loremflickr.com/180/120?random=2" alt="">
+            <img src="https://loremflickr.com/180/120?random=3" alt="">
+            <img src="https://loremflickr.com/180/120?random=4" alt="">
+            <img src="https://loremflickr.com/180/120?random=5" alt="">
+            <img src="https://loremflickr.com/180/120?random=6" alt="">
+            <input type="button" class="btn bbleu" value=">">
+        </div>
+    </footer>
+    <script src="moutmoutmout.js"></script>
+    <script src="https://kit.fontawesome.com/ba31fbaee6.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

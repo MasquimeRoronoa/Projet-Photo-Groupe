@@ -91,6 +91,14 @@ footer {
 
 /*------------------------ Barre de navigation ------------------------*/
 
+.btnlist {
+    width: auto;
+}
+
+.bouton {
+    background:none;
+}
+
 .navbar {
     background: #F5F6F6;
 }
