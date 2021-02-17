@@ -5,7 +5,9 @@ $(window).ready(
         var pimg = $('#pimg')
         var coms = $('#coms')
         var titre = $('#bite')
+        var titre1 = $('#bite1')
         var definition = $('#headcom')
+        var definition1 = $('#headcom1')
         var th2 = $('#th2')
         var coms2 = $('#coms2')
         var userObj
@@ -130,32 +132,32 @@ $(window).ready(
             }
         })
         $('#animo').click(function(event){
-            titre.text("")
+            titre1.text("")
             th2.text('Animaux')
-            definition.text("Quel belle animal")
+            definition1.text("Quel belle animal")
         })
         $('#saison').click(function(event){
-            titre.text("")
-            definition.text("Automne / Eté / Hiver / Printemps")
+            titre1.text("")
+            definition1.text("Automne / Eté / Hiver / Printemps")
         })
         $('#fetes').click(function(event){
-            titre.text("")
-            definition.text("Bar-mitzvah ?")
+            titre1.text("")
+            definition1.text("Bar-mitzvah ?")
         })
         $('#nature').click(function(event){
-            titre.text("Nature")
-            definition.text("La nature dans toute sa splendeur")
+            titre1.text("Nature")
+            definition1.text("La nature dans toute sa splendeur")
         })
         $('#urbain').click(function(event){
-            titre.text("Urbain")
-            definition.text("Street Art")
+            titre1.text("Urbain")
+            definition1.text("Street Art")
         })
         $('#sport').click(function(event){
-            titre.text("Sport")
-            definition.text("Shaq'in fool")
+            titre1.text("Sport")
+            definition1.text("Shaq'in fool")
         })
         $('#nuit').click(function(event){
-            titre.text("Nuit")
-            definition.text("C'est joli même de nuit")
+            titre1.text("Nuit")
+            definition1.text("C'est joli même de nuit")
         })
     })
