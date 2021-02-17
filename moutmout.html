@@ -34,36 +34,36 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropbtn">TECHNIQUES</a>
                             <div class="dropdown-content">
-                                <a href="#">HDR</a>
-                                <a href="#">High Key / Low Key</a>
-                                <a href="#">High speed</a>
-                                <a href="#">Studio</a>
-                                <a href="#">Pose longue</a>
-                                <a href="#">Tilt Shift</a>
-                                <a href="#">Light Painting</a>
+                                <a href="#" id="thdr">HDR</a>
+                                <a href="#" id="hklk">High Key / Low Key</a>
+                                <a href="#" id="hs">High speed</a>
+                                <a href="#" id="studio">Studio</a>
+                                <a href="#" id="pl">Pose longue</a>
+                                <a href="#" id="ts">Tilt Shift</a>
+                                <a href="#" id="lp">Light Painting</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropbtn">CATEGORIES</a>
                             <div class="dropdown-content">
-                                <a href="#">Noir & Blanc</a>
-                                <a href="#">Portrait</a>
-                                <a href="#">Paysage</a>
-                                <a href="#">Architecture</a>
-                                <a href="#">Graphisme</a>
-                                <a href="#">Evenements</a>
+                                <a href="#" id="nb">Noir & Blanc</a>
+                                <a href="#" id="portrait">Portrait</a>
+                                <a href="#" id="paysage">Paysage</a>
+                                <a href="#" id="architecture">Architecture</a>
+                                <a href="#" id="graphisme">Graphisme</a>
+                                <a href="#" id="evenements">Evenements</a>
                                 <a href="#" id="private">Boudoire</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropbtn">ALBUM</a>
                             <div class="dropdown-content">
-                                <a href="#">Animaux</a>
-                                <a href="#">Saison</a>
-                                <a href="#">Fêtes</a>
-                                <a href="#">Nature</a>
-                                <a href="#">Urbain</a>
-                                <a href="#">Sport</a>
-                                <a href="#">Nuit</a>
+                                <a href="#" id="animo">Animaux</a>
+                                <a href="#" id="saison">Saison</a>
+                                <a href="#" id="fetes">Fêtes</a>
+                                <a href="#" id="nature">Nature</a>
+                                <a href="#" id="urbain">Urbain</a>
+                                <a href="#" id="sport">Sport</a>
+                                <a href="#" id="nuit">Nuit</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -109,11 +109,18 @@
             </div>
         </nav>
 </header>
+<div id="techniques">
+
+</div>
+<div id="categories">
+
+</div>
 <div id="contain" class="row">
 
-    <div class="col-md-6">
 
-        <img src="https://loremflickr.com/360/240?random=1" alt="" id="picture">
+    <div class="leftcolumn container" id="pimg">
+
+        <img src="https://loremflickr.com/360/240?random=1" alt="" class="picture">
 
         <div id="EXIF">
             <p class="pexif"> Date : <span id="date" class="infoexif"> 10/02/2021 </span></p>
@@ -125,11 +132,49 @@
 
     </div>
 
-    <div class="col-md-6">
+    <div id="album" class="leftcolumn">
+
+        <h2 id="th2"> Ti</h2>
+        <div class="container">
+            <div class="fl" id="EXIF">
+                <p class="pexif"> Date : <span id="date" class="infoexif"> 10/02/2021 </span></p>
+                <p class="pexif"> Appareil : <span id="appareil" class="infoexif"> Canon 60D </span></p>
+                <p class="pexif"> Objectif : <span id="objectif" class="infoexif"> 70-200 F2.8L </span></p>
+                <p class="pexif"> Autres : <span id="autres"
+                                                 class="infoexif"> F2.8, 1/60s iso 200, Flash : Non, 135mm </span></p>
+            </div>
+            <img src="https://loremflickr.com/180/120?random=7" alt="" class="i3 w-100 h-100">
+        </div>
+        <div class="" id="coms2">
+            <div id="Info">
+
+                <h2 id="bite"> Titre </h2>
+                <h4 id="headcom"> Commentaires sur la photo</h4>
+
+            </div>
+
+            <div id="com">
+                <div id="text-comm">
+                    <form>
+                        <textarea cols="50" rows="4" placeholder="Ecrivez un commentaire ici ! " id="comment"></textarea>
+                        <br>
+                        <input type="submit" id="facebook" value="Facebook" class="btn btn-primary">
+                        <input type="submit" id="tweet" value="Tweeter" class="btn btn-info">
+                        <input type="submit" id="insta" value="Instagram" class="btn btn-secondary">
+                        <input type="submit" id="pint" value="Pinterest" class="btn btn-danger">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="rightcolumn " id="coms">
 
         <div id="Info">
 
-            <h2> Titre </h2>
+            <h2 id="bite"> Titre </h2>
             <h4 id="headcom"> Commentaires sur la photo</h4>
 
         </div>
@@ -148,6 +193,7 @@
         </div>
 
     </div>
+
 </div>
 
 <div id="formContact" style="display: none">
@@ -173,7 +219,7 @@
 
 <div id="biographie" style="display: none">
     <div>
-        <img id="img1" src="photoprofil.jpg">
+        <img id="img1" src="">
     </div>
     <div class="infosbio">
         <h2>Rudy Lesur</h2>
@@ -181,13 +227,13 @@
         <p>rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy rudy</p>
     </div>
 </div>
-<div class="container" id="inscriptiondiv">
+<!--<div class="container" id="inscriptiondiv">
     <form id="inscription">
     <input type="text" id="pseudo" placeholder="pseudo">
     <input type="password" id="passworde" placeholder="password">
         <input class="btn-warning" type="submit" value="inscrit">
     </form>
-</div>
+</div> -->
 
 
 <footer id="footer">
@@ -202,6 +248,8 @@
         <input type="button" class="btn btn-success" value=">">
     </div>
 </footer>
+
+
 <script src="moutmoutmout.js"></script>
 </body>
 </html>

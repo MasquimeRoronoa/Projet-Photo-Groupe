@@ -44,7 +44,7 @@ footer {
     margin-bottom: 4%;
 }
 
-#picture {
+.picture {
     margin-right: 25%;
     margin-left: 25%;
 }
@@ -175,4 +175,22 @@ input {
 
 .infosbio {
     margin: 20px;
+}
+
+#th2 {
+    text-align: center;
+    column-span: all;
+}
+
+.i2 {
+    column-count: 3;
+    column-gap: 10%
+}
+.leftcolumn{
+    float:left;
+    width: 50%;
+}
+.rightcolumn{
+    float:left;
+    width: 50%;
 }
