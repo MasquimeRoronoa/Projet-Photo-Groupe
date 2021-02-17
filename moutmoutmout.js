@@ -12,6 +12,7 @@ $(window).ready(
         var coms2 = $('#coms2')
         var userObj
 
+
         album.hide()
         $('#inscription').submit(function (event) {
             event.preventDefault()
@@ -129,7 +130,10 @@ $(window).ready(
             if (album.show()){
                 album.hide()
                 pimg.show()
+            } if (coms.hide()){
+                coms.show()
             }
+            coms.addClass("rightcolumn")
         })
         $('#animo').click(function(event){
             titre1.text("")
