@@ -133,6 +133,10 @@ ul{
     color : white;
 }
 
+.Tsombre, .Tsemi, .Tclair {
+    cursor: pointer;
+}
+
 /*------------------------ Gallerie ------------------------*/
 
 .containere {

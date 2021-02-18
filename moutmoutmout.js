@@ -73,7 +73,6 @@ $(window).ready(function () {
 
     // Changement de théme 
     $('.Tsombre').click((event) => {
-        event.preventDefault()
         $('body').css('background', 'black')
         $('body').css('color', 'white')
         $('.navbar').css('background', '#939598')
@@ -81,7 +80,6 @@ $(window).ready(function () {
     })
     
     $('.Tsemi').click((event) => {
-        event.preventDefault()
         $('body').css('background', '#939598')
         $('body').css('color', 'black')
         $('.navbar').css('background', '#F5F6F6')
@@ -89,7 +87,6 @@ $(window).ready(function () {
     })
 
     $('.Tclair').click((event) => {
-        event.preventDefault()
         $('body').css('background', 'white')
         $('body').css('color', 'black')
         $('.navbar').css('background', '#F5F6F6')
