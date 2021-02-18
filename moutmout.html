@@ -25,130 +25,144 @@
                             <a class="nav-link" href="index.html"><i class="fas fa-home fa-lg"></i></a>
                         </div>
                     </div>
-                    <button class="navbar-toggler bouton" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler nav-link" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <div class="nav-link">
+                            <i class="fas fa-angle-double-down"></i>
+                        </div>
                     </button>
                     <div class="collapse navbar-collapse">
-                        <button class="navbar-toggler nav-link bouton" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <div class="nav-link">
-                                <i class="fas fa-angle-double-down"></i>
+                        <div class="col-12 row d-flex justify-content-around">
+                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
+                                <ul>
+                                    <li class="nav-item dropdown">
+                                        <button type="button" class="btn accordeon-expand-btn bouton"
+                                            data-bs-target="#aboutMe" aria-expanded="false" aria-controls="aboutMe">
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="A propos de moi"> <i
+                                                    class="far fa-address-card fa-lg"></i></span>
+                                        </button>
+                                    </li>
+                                </ul>
                             </div>
-                        </button>
-                        <div class="collapse navbar-collapse btnlist">
-                            <ul class="navbar-nav mx-auto">
-                                <li class="nav-item">
-                                    <button type="button" class="btn accordeon-expand-btn bouton" data-bs-target="#aboutMe"
-                                        aria-expanded="false" aria-controls="aboutMe">
-                                        <span data-bs-toggle="tooltip" data-bs-placement="right"
-                                            title="A propos de moi"> <i class="far fa-address-card fa-lg"></i></span>
-                                    </button>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <button type="button" class="btn accordeon-expand-btn bouton"
-                                        data-bs-target="#technicalMenu" aria-expanded="false"
-                                        aria-controls="technicalMenu">
-                                        <span data-bs-toggle="tooltip" data-bs-placement="right"
-                                            title="Les techniques utilisées "> <i
-                                                class="far fa-images fa-lg"></i></span>
-                                    </button>
-                                    <div class="dropdown-content">
-                                        <a href="#">HDR</a>
-                                        <a href="#">High Key / Low Key</a>
-                                        <a href="#">High speed</a>
-                                        <a href="#">Studio</a>
-                                        <a href="#">Pose longue</a>
-                                        <a href="#">Tilt Shift</a>
-                                        <a href="#">Light Painting</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <button type="button" class="btn accordeon-expand-btn bouton" data-bs-target="#galerieMenu"
-                                        aria-expanded="false" aria-controls="galerieMenu">
-                                        <span data-bs-toggle="tooltip" data-bs-placement="right"
-                                            title="Les catégories de photos"> <i class="fas fa-film fa-lg"></i> </span>
-                                    </button>
-                                    <div class="dropdown-content">
-                                        <a href="#">Noir & Blanc</a>
-                                        <a href="#">Portrait</a>
-                                        <a href="#">Paysage</a>
-                                        <a href="#">Architecture</a>
-                                        <a href="#">Graphisme</a>
-                                        <a href="#">Evenements</a>
-                                        <a href="#" id="private">Boudoire</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <button type="button" class="btn accordeon-expand-btn bouton" data-bs-target="#albumMenu"
-                                        aria-expanded="false" aria-controls="albumMenu">
-                                        <span data-bs-toggle="tooltip" data-bs-placement="right" title="Les albums"> <i
-                                                class="fas fa-person-booth fa-lg"></i></span>
-                                    </button>
-                                    <div class="dropdown-content">
-                                        <a href="#">Animaux</a>
-                                        <a href="#">Saison</a>
-                                        <a href="#">Fêtes</a>
-                                        <a href="#">Nature</a>
-                                        <a href="#">Urbain</a>
-                                        <a href="#">Sport</a>
-                                        <a href="#">Nuit</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <button type="button" class="btn accordeon-expand-btn bouton" data-bs-target="#themeMenu"
-                                        aria-expanded="false" aria-controls="themeMenu">
-                                        <span data-bs-toggle="tooltip" data-bs-placement="right" title="Thèmes"> <i
-                                                class="fas fa-paint-brush fa-flip-both"></i></span>
-                                    </button>
-                                    <div class="dropdown-content">
-                                        <ul class="nav">
-                                            <li class="nav-item">
-                                                <span data-bs-toggle="tooltip" data-bs-placement="right"
-                                                    title="Theme noir" class="nav-link" id="black"><i
-                                                        class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
-                                            </li>
-                                            <li class="nav-item">
-                                                <span data-bs-toggle="tooltip" data-bs-placement="right"
-                                                    title="Theme gris" class="nav-link" id="grey"><i
-                                                        class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
-                                            </li>
-                                            <li class="nav-item">
-                                                <span data-bs-toggle="tooltip" data-bs-placement="right"
-                                                    title="Theme blanc" class="nav-link" id="white"><i
-                                                        class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <button type="button" class="btn accordeon-expand-btn bouton">
-                                        <span data-bs-toggle="tooltip" data-bs-placement="right" title="Connexion"> 
-                                            <i class="fas fa-fingerprint fa-lg"></i>
-                                        </span>
-                                    </button>
-                                    <div class="dropdown-content" style="right:0;">
-                                        <div id="connect">
-                                            <form id="connecting">
-                                                <br>
-                                                <h4>Login :</h4>
-                                                <input type="text" id="login">
-                                                <br>
-                                                <br>
-                                                <h4>Mot de passe :</h4>
-                                                <input type="password" id="mdp">
-                                                <br>
-                                                <br>
-                                                <input type="submit" class="btn bbleu" id="submit" value="Connexion">
-                                                <br>
-                                                <br>
-                                                <p><a href="" id='mdp'> Mot de passe oublié ? </a></p>
-                                            </form>
+                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
+                                <ul>
+                                    <li class="nav-item dropdown">
+                                        <button type="button" class="btn accordeon-expand-btn bouton"
+                                            data-bs-target="#technicalMenu" aria-expanded="false"
+                                            aria-controls="technicalMenu">
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Les techniques utilisées "> <i
+                                                    class="far fa-images fa-lg"></i></span>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="#">HDR</a>
+                                            <a href="#">High Key / Low Key</a>
+                                            <a href="#">High speed</a>
+                                            <a href="#">Studio</a>
+                                            <a href="#">Pose longue</a>
+                                            <a href="#">Tilt Shift</a>
+                                            <a href="#">Light Painting</a>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
+                                <ul>
+                                    <li class="nav-item dropdown">
+                                        <button type="button" class="btn accordeon-expand-btn bouton"
+                                            data-bs-target="#galerieMenu" aria-expanded="false"
+                                            aria-controls="galerieMenu">
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                                title="Les catégories de photos"> <i class="fas fa-film fa-lg"></i>
+                                            </span>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Noir & Blanc</a>
+                                            <a href="#">Portrait</a>
+                                            <a href="#">Paysage</a>
+                                            <a href="#">Architecture</a>
+                                            <a href="#">Graphisme</a>
+                                            <a href="#">Evenements</a>
+                                            <a href="#" id="private">Boudoire</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
+                                <ul>
+                                    <li class="nav-item dropdown">
+                                        <button type="button" class="btn accordeon-expand-btn bouton"
+                                            data-bs-target="#albumMenu" aria-expanded="false" aria-controls="albumMenu">
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right" title="Les albums">
+                                                <i class="fas fa-person-booth fa-lg"></i></span>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Animaux</a>
+                                            <a href="#">Saison</a>
+                                            <a href="#">Fêtes</a>
+                                            <a href="#">Nature</a>
+                                            <a href="#">Urbain</a>
+                                            <a href="#">Sport</a>
+                                            <a href="#">Nuit</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
+                                <ul>
+                                    <li class="nav-item dropdown">
+                                        <button type="button" class="btn accordeon-expand-btn bouton"
+                                            data-bs-target="#themeMenu" aria-expanded="false" aria-controls="themeMenu">
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right" title="Thèmes"> <i
+                                                    class="fas fa-paint-brush fa-flip-both"></i></span>
+                                        </button>
+                                        <div class="dropdown-content except">
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right" title="Theme noir"
+                                                class="nav-link Tsombre" id="black"><i
+                                                    class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right" title="Theme gris"
+                                                class="nav-link Tsemi" id="grey"><i
+                                                    class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right" title="Theme blanc"
+                                                class="nav-link Tclair" id="white"><i
+                                                    class="fas fa-fill-drip fa-flip-horizontal fa-lg"></i></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
+                                <ul>
+                                    <li class="nav-item dropdown">
+                                        <button type="button" class="btn accordeon-expand-btn bouton">
+                                            <span data-bs-toggle="tooltip" data-bs-placement="right" title="Connexion">
+                                                <i class="fas fa-fingerprint fa-lg"></i>
+                                            </span>
+                                        </button>
+                                        <div class="dropdown-content Exconnect" style="right:0;">
+                                            <div id="connect">
+                                                <form id="connecting">
+                                                    <br>
+                                                    <h4>Login :</h4>
+                                                    <input type="text" id="login">
+                                                    <br>
+                                                    <br>
+                                                    <h4>Mot de passe :</h4>
+                                                    <input type="password" id="mdp">
+                                                    <br>
+                                                    <br>
+                                                    <input type="submit" class="btn bbleu" id="submit"
+                                                        value="Connexion">
+                                                    <br>
+                                                    <br>
+                                                    <p><a href="" id='mdp'> Mot de passe oublié ? </a></p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
