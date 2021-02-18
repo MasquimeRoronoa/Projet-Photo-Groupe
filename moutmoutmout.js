@@ -29,6 +29,7 @@ $(window).ready(function () {
         }
 
     })
+    
     $('#inscription').submit(function (event) {
         event.preventDefault()
         var password = $('#passworde').val()
