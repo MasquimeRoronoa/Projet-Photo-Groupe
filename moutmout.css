@@ -342,3 +342,7 @@ input {
     width: 18%;
     height: 25%;
 }
+#coms01 {
+    overflow-y: auto;
+    max-height: 20%;
+}
