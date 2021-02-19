@@ -14,7 +14,6 @@ html, body {
 body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
 }
 
 header, footer {
@@ -168,7 +167,7 @@ img {
 }
 
 
-/*----------------MARINE & MAXENCE --------------------*/
+/*---------------- Dropdown --------------------*/
 
 .dropbtn {
     color: white;
@@ -282,6 +281,9 @@ input {
 .rightcolumn{
     float:left;
     width: 50%;
+}
+.i3{
+    column-count: 2;
 }
 .i4{
     width: 60%;
