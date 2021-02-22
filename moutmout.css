@@ -5,7 +5,8 @@
     src: url(CANON.ttf);
 }
 
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -22,10 +23,11 @@ body {
     width: 100%;
 }
 
-header, footer {
+header,
+footer {
     width: 100%;
     display: block;
-    height: auto;
+    height: 17vh;
 }
 
 h1 {
@@ -34,9 +36,6 @@ h1 {
 }
 
 footer {
-    position: sticky;
-    padding-bottom: 1%;
-    padding-top: 1%;
     bottom: 0;
     background: #F5F6F6;
 }
@@ -66,6 +65,7 @@ footer {
     margin-top: 2%;
     text-align: center;
 }
+
 #EXIF2 {
     text-align: center;
 }
@@ -77,6 +77,7 @@ footer {
 .infoexif {
     font-weight: normal;
 }
+
 #connexion {
     color: #0074BD;
 }
@@ -113,50 +114,53 @@ footer {
     margin-right: 5%;
     padding-left: 3%;
 }
-ul{
+
+ul {
     list-style: none;
     margin-bottom: 0;
 }
 
 .bouton {
-    background:none;
+    background: none;
 }
 
 .navbar {
     background: #F5F6F6;
 }
 
-#generalMenu span{
-    color : #C00000;
+#generalMenu span {
+    color: #C00000;
 }
 
-#generalMenu span:hover{
-    color : #C00000;
+#generalMenu span:hover {
+    color: #C00000;
     opacity: 0.7;
 }
 
-#generalMenu a{
-    color : #0074BD;
+#generalMenu a {
+    color: #0074BD;
 }
 
-#generalMenu a:hover{
-    color : #0074BD;
+#generalMenu a:hover {
+    color: #0074BD;
     opacity: 0.7;
 }
 
-#generalMenu #black{
-    color : black;
+#generalMenu #black {
+    color: black;
 }
 
-#generalMenu #grey{
-    color : #939598;
+#generalMenu #grey {
+    color: #939598;
 }
 
-#generalMenu #white{
-    color : white;
+#generalMenu #white {
+    color: white;
 }
 
-.Tsombre, .Tsemi, .Tclair {
+.Tsombre,
+.Tsemi,
+.Tclair {
     cursor: pointer;
 }
 
@@ -170,7 +174,7 @@ ul{
 }
 
 .carousel {
-    width : 100%;
+    width: 100%;
 }
 
 img {
@@ -232,7 +236,7 @@ img {
     position: relative;
 }
 
-.dropdown-submenu > .dropdown-menu {
+.dropdown-submenu>.dropdown-menu {
     top: -0%;
     left: 100%;
     padding-top: 0%;
@@ -244,7 +248,7 @@ img {
     border-radius: 0 6px 6px 6px;
 }
 
-.dropdown-submenu:hover > .dropdown-menu {
+.dropdown-submenu:hover>.dropdown-menu {
     display: block;
 }
 
@@ -287,21 +291,21 @@ input {
     column-gap: 10%
 }
 
-.leftcolumn{
-    float:left;
+.leftcolumn {
+    float: left;
     width: 50%;
 }
 
-.rightcolumn{
-    float:left;
+.rightcolumn {
+    float: left;
     width: 50%;
 }
 
-.i3{
+.i3 {
     column-count: 2;
 }
 
-.i4{
+.i4 {
     width: 60%;
     margin: auto;
     border-radius: 10px;
@@ -348,7 +352,8 @@ input {
     text-align: center;
 }
 
-.next, .prev {
+.next,
+.prev {
     position: relative;
 }
 
