@@ -13,6 +13,20 @@ $(window).ready(function () {
     var pseudo = $('#pseudo').val()
     var comment = $('#comment').val()
 
+    // Modal zoom
+    $('.overlaypic').click(function () {
+        $('.modal').show()
+        $('.modal-content').attr("src", $(this).attr('src'))
+    })
+    $('.closeMe').click(function () {
+        $('.modal').hide()
+    })
+    $(document).keydown(function (event) {
+        if (event.keyCode == 27) {
+            $('.overlay').hide()
+        }
+    })
+
     album.hide()
     $('#inscription').submit(function (event) {
         event.preventDefault()
@@ -176,6 +190,7 @@ $(window).ready(function () {
         th2.text('Nuit')
         definition1.text("C'est joli même de nuit")
     })
+
     //Connexion
     var userObj
 
@@ -257,55 +272,51 @@ $('.Tclair').click((event) => {
 })
 
 //Commentaire
-var pseudo = $('#pseudo01').val() 
+var pseudo = $('#pseudo01').val()
 
 var comment = $('#comment01').val()
 
 $('#form01').submit(function (event) {
-   event.preventDefault()
+    event.preventDefault()
 
-    if ($('#pseudo01').val().length < 3 ||$('#comment01').val().length < 8){
+    if ($('#pseudo01').val().length < 3 || $('#comment01').val().length < 8) {
         alert("Champs incomplet")
-     }
+    } else {
 
-      else { 
-
-          var newcomment =` <h4>%pseudo%</h4> 
+        var newcomment = ` <h4>%pseudo%</h4> 
                             <p>%comment%</p>
                           `
-            newcomment = newcomment.replace(/%pseudo%/g,$('#pseudo01').val())
+        newcomment = newcomment.replace(/%pseudo%/g, $('#pseudo01').val())
 
-            newcomment = newcomment.replace(/%comment%/g,$('#comment01').val())
+        newcomment = newcomment.replace(/%comment%/g, $('#comment01').val())
 
-           $('#defil01').append(newcomment)
+        $('#defil01').append(newcomment)
 
-        }
+    }
 })
 
-var pseudo = $('#pseudo02').val() 
+var pseudo = $('#pseudo02').val()
 
 var comment = $('#comment02').val()
 
 $('#form02').submit(function (event) {
     event.preventDefault()
- 
-     if ($('#pseudo02').val().length < 3 ||$('#comment02').val().length < 8){
-         alert("Champs incomplet")
-      }
- 
-       else { 
- 
-           var newcomment =` <h4>%pseudo%</h4> 
+
+    if ($('#pseudo02').val().length < 3 || $('#comment02').val().length < 8) {
+        alert("Champs incomplet")
+    } else {
+
+        var newcomment = ` <h4>%pseudo%</h4> 
                              <p>%comment%</p>
                            `
-             newcomment = newcomment.replace(/%pseudo%/g,$('#pseudo02').val())
- 
-             newcomment = newcomment.replace(/%comment%/g,$('#comment02').val())
- 
-            $('#defil02').append(newcomment)
- 
-         }
- })
+        newcomment = newcomment.replace(/%pseudo%/g, $('#pseudo02').val())
+
+        newcomment = newcomment.replace(/%comment%/g, $('#comment02').val())
+
+        $('#defil02').append(newcomment)
+
+    }
+})
 
 //formContact
 $('#btnContact').click(() => {
