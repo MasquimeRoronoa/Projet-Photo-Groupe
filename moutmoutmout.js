@@ -11,7 +11,7 @@ $(window).ready(function () {
     var th2 = $('#th2')
     var coms2 = $('#coms2')
     var pseudo = $('#pseudo').val()
-    var comment =$('#comment').val()
+    var comment = $('#comment').val()
 
     album.hide()
     $('#inscription').submit(function (event) {
@@ -176,19 +176,20 @@ $(window).ready(function () {
         th2.text('Nuit')
         definition1.text("C'est joli même de nuit")
     })
-//Connexion
-var userObj
+    //Connexion
+    var userObj
 
-    if (!localStorage.getItem('accounts')){
+    if (!localStorage.getItem('accounts')) {
         userObj = {
-            "users": [
-                        {
-                            pseudo : "machin",
-                            mdp : "mdp"},
-                        {
-                            pseudo : "machine",
-                            mdp : "mdp2"}
-                    ]
+            "users": [{
+                    pseudo: "machin",
+                    mdp: "mdp"
+                },
+                {
+                    pseudo: "machine",
+                    mdp: "mdp2"
+                }
+            ]
         }
     }
 
@@ -204,27 +205,27 @@ var userObj
             alert('Les champs sont obligatoires')
         } else {
             let isConnected = false
-                let x
-                for (x in userObj.users) {
-                    var actualUser = userObj.users[x]
-                    if (actualUser.pseudo == pseudo) {
-                        if (actualUser.mdp == mdp) {
-                            isConnected = true
-                            sessionStorage.setItem("session", JSON.stringify(actualUser))
-                            break;
-                        }
+            let x
+            for (x in userObj.users) {
+                var actualUser = userObj.users[x]
+                if (actualUser.pseudo == pseudo) {
+                    if (actualUser.mdp == mdp) {
+                        isConnected = true
+                        sessionStorage.setItem("session", JSON.stringify(actualUser))
+                        break;
                     }
                 }
-                if (isConnected) {
-                    alert("Content de te revoir")
-                    $('#connect').html("Vous êtes connecté sous le nom de " + pseudo)
-                } else {
-                    alert("Il faut demander des identifiants")
-                    $('#contain').hide()
-                    $('#form').show()
-                }
-                $('#identifiant').val("")
-                $('#mdp').val("")
+            }
+            if (isConnected) {
+                alert("Content de te revoir")
+                $('#connect').html("Vous êtes connecté sous le nom de " + pseudo)
+            } else {
+                alert("Il faut demander des identifiants")
+                $('#contain').hide()
+                $('#form').show()
+            }
+            $('#identifiant').val("")
+            $('#mdp').val("")
         }
     }
 })
@@ -303,17 +304,19 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("demo");
     var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
 }
-
-
