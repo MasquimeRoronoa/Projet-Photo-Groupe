@@ -7,6 +7,7 @@ $(window).ready(function () {
     var titre1 = $('#bite1')
     var definition = $('#headcom')
     var definition1 = $('#headcom1')
+    var bio = $('#biographie')
     var th2 = $('#th2')
     var coms2 = $('#coms2')
     var pseudo = $('#pseudo').val()
@@ -133,6 +134,11 @@ $(window).ready(function () {
         if (coms.hide()) {
             coms.show()
         }
+        if (bio.show()) {
+            bio.hide()
+            $('#contain').show()
+            $('#footer').show()
+        }
         coms.addClass("rightcolumn")
     })
     $('#animo').click(function (event) {
@@ -170,6 +176,52 @@ $(window).ready(function () {
         th2.text('Nuit')
         definition1.text("C'est joli même de nuit")
     })
+//Connexion
+var userObj
+
+    if (!localStorage.getItem('accounts')){
+        userObj = {
+            "users": [
+                        {
+                            pseudo : "machin",
+                            mdp : "mdp"},
+                        {
+                            pseudo : "machine",
+                            mdp : "mdp2"}
+                    ]
+        }
+    }
+
+    $('#connecting').submit(login)
+
+    function login(event) {
+        event.preventDefault()
+
+        var pseudo = $('#identifiant').val()
+        var mdp = $('#mdp').val()
+
+        if (pseudo == "" || mdp == "") {
+            alert('Les champs sont obligatoires')
+        } else {
+            let isConnected = false
+                let x
+                for (x in userObj.users) {
+                    var actualUser = userObj.users[x]
+                    if (actualUser.pseudo == pseudo) {
+                        if (actualUser.mdp == mdp) {
+                            isConnected = true
+                            sessionStorage.setItem("session", JSON.stringify(actualUser))
+                            break;
+                        }
+                    }
+                }
+                if (isConnected) {
+                    alert("Content de vous revoir")
+                } else {
+                    alert("Il faut demander des identifiants")
+                }
+        }
+    }
 })
 // Changement de théme
 $('.Tsombre').click((event) => {
