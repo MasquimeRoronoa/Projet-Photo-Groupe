@@ -373,6 +373,11 @@ input {
     width: 100%;
 }
 
+#coms02 {
+    overflow-y: auto;
+    max-height: 150px;
+    width: 100%;
+}
 .Baisé {
     opacity: 100;
 }

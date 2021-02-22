@@ -255,6 +255,58 @@ $('.Tclair').click((event) => {
     $('#form').css('background', '#939598')
     $('#form').css('color', 'black')
 })
+
+//Commentaire
+var pseudo = $('#pseudo01').val() 
+
+var comment = $('#comment01').val()
+
+$('#form01').submit(function (event) {
+   event.preventDefault()
+
+    if ($('#pseudo01').val().length < 3 ||$('#comment01').val().length < 8){
+        alert("Champs incomplet")
+     }
+
+      else { 
+
+          var newcomment =` <h4>%pseudo%</h4> 
+                            <p>%comment%</p>
+                          `
+            newcomment = newcomment.replace(/%pseudo%/g,$('#pseudo01').val())
+
+            newcomment = newcomment.replace(/%comment%/g,$('#comment01').val())
+
+           $('#defil01').append(newcomment)
+
+        }
+})
+
+var pseudo = $('#pseudo02').val() 
+
+var comment = $('#comment02').val()
+
+$('#form02').submit(function (event) {
+    event.preventDefault()
+ 
+     if ($('#pseudo02').val().length < 3 ||$('#comment02').val().length < 8){
+         alert("Champs incomplet")
+      }
+ 
+       else { 
+ 
+           var newcomment =` <h4>%pseudo%</h4> 
+                             <p>%comment%</p>
+                           `
+             newcomment = newcomment.replace(/%pseudo%/g,$('#pseudo02').val())
+ 
+             newcomment = newcomment.replace(/%comment%/g,$('#comment02').val())
+ 
+            $('#defil02').append(newcomment)
+ 
+         }
+ })
+
 //formContact
 $('#btnContact').click(() => {
     $('#contain').hide()
