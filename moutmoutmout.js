@@ -216,10 +216,15 @@ var userObj
                     }
                 }
                 if (isConnected) {
-                    alert("Content de vous revoir")
+                    alert("Content de te revoir")
+                    $('#connect').html("Vous êtes connecté sous le nom de " + pseudo)
                 } else {
                     alert("Il faut demander des identifiants")
+                    $('#contain').hide()
+                    $('#form').show()
                 }
+                $('#identifiant').val("")
+                $('#mdp').val("")
         }
     }
 })
