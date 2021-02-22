@@ -11,6 +11,12 @@ html, body {
     overflow-x: hidden;
 }
 
+#Corpse {
+    height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -19,7 +25,7 @@ body {
 header, footer {
     width: 100%;
     display: block;
-    height: 17%;
+    height: 17vh;
 }
 
 h1 {
@@ -288,7 +294,8 @@ input {
 .i4{
     width: 60%;
     margin: auto;
-    border-radius: 10px
+    border-radius: 10px;
+    padding: 0;
 }
 #form {
     text-align: center;
@@ -344,7 +351,8 @@ input {
 }
 #coms01 {
     overflow-y: auto;
-    max-height: 20%;
+    max-height: 150px;
+    width: 100%;
 }
 
 .Baisé {
