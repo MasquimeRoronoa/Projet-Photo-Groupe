@@ -1,6 +1,6 @@
 $(window).ready(function () {
     var private = $('#private')
-    var album = $('#album')
+    var album = $('#fdpalbum')
     var pimg = $('#pimg')
     var coms = $('#coms')
     var titre = $('#bite')
@@ -8,10 +8,17 @@ $(window).ready(function () {
     var definition = $('#headcom')
     var definition1 = $('#headcom1')
     var bio = $('#biographie')
-    var th2 = $('#th2')
+    var th2 = $('.th2')
     var coms2 = $('#coms2')
     var pseudo = $('#pseudo').val()
     var comment = $('#comment').val()
+    var albumpics = $("#albumpics")
+    var contact = $('#form')
+
+    $('.imgfoot').click(function () {
+        $('#albumpics').show()
+        $('#albumpics').attr("src", $(this).attr('src'))
+    })
 
     // Modal zoom
     $('.overlaypic').click(function () {
@@ -27,7 +34,19 @@ $(window).ready(function () {
         }
     })
 
-    album.hide()
+    $('.overlaypic').click(function () {
+        $('.modal2').show()
+        $('.modal-content2').attr("src", $(this).attr('src'))
+    })
+    $('.closeMe').click(function () {
+        $('.modal2').hide()
+    })
+    $(document).keydown(function (event) {
+        if (event.keyCode == 27) {
+            $('.overlay').hide()
+        }
+    })
+
     $('#inscription').submit(function (event) {
         event.preventDefault()
         var password = $('#passworde').val()
@@ -134,11 +153,9 @@ $(window).ready(function () {
         if (coms.show()) {
             coms.hide()
         }
-        coms.removeClass("rightcolumn")
-        $('#album').addClass("i2")
-        $('#album').css("width", "100%")
-
-
+        if (contact.show()) {
+            contact.hide()
+        }
     })
     $('#thdr, #hklk, #hs, #studio, #pl, #ts, #lp, #nb, #portrait, #paysage, #architecture, #graphisme, #evenements, #private').click(function (event) {
         if (album.show()) {
@@ -152,6 +169,9 @@ $(window).ready(function () {
             bio.hide()
             $('#contain').show()
             $('#footer').show()
+        }
+        if (contact.show()) {
+            contact.hide()
         }
         coms.addClass("rightcolumn")
     })

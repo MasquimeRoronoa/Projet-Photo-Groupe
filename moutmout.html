@@ -262,64 +262,81 @@
                     <p class="pexif"> EXIF : <span id="autres" class="infoexif"> F2.8, 1/60s iso 200, 135mm </span></p>
                 </div>
             </div>
-            <div id="album" class="leftcolumn">
-                <h2 id="th2"> Ti</h2>
-                <div class="container">
-                    <div class="fl" id="EXIF">
-                        <p class="pexif"> Date : <span id="date" class="infoexif"> 10/02/2021 </span></p>
-                        <p class="pexif"> Appareil : <span id="appareil" class="infoexif"> Canon 60D </span></p>
-                        <p class="pexif"> Objectif : <span id="objectif" class="infoexif"> 70-200 F2.8L </span></p>
-                        <p class="pexif"> Autres : <span id="autres" class="infoexif"> F2.8, 1/60s iso 200, Flash : Non,
-                                135mm </span></p>
-                    </div>
-                    <img src="https://loremflickr.com/180/120?random=7" alt="" class="i3 w-100 h-100">
-                </div>
-                <div class="" id="coms2">
-                    <div id="Info1">
-                        <h2 id="bite1"> Titre </h2>
-                        <h4 id="headcom1"> Commentaires sur la photo</h4>
-                    </div>
-                    <div id="com1">
-                        <div id="text-comm1">
-                            <div id="coms02" class="container">
-                                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
-                                    tabindex="0" id="defil02">
-                                    <h4 class="pseudo">JeanDu58</h4>
-                                    <p>Super Photo , J'adore !</p>
+            <div class="container-fluid album" id='fdpalbum' style="display: none">
+                <div class="row">
+                    <div class="col-2">
 
-                                    <h4 class="pseudo">Brigitte</h4>
-                                    <p>Le bonheur ne s'acquiert pas, il ne réside pas dans les apparences, chacun
-                                        d'entre nous
-                                        le
-                                        construit
-                                        à chaque instant de sa vie avec son coeur.</p>
-
-                                    <h4 class="pseudo">wallah038</h4>
-                                    <p>Très Jolie ! </p>
-                                </div>
+                        <div class="container">
+                            <div class="exifalbum">
+                                <p class="pexif"> Date : <span id="date" class="infoexif"> 10/02/2021 </span></p>
+                                <p class="pexif"> Appareil : <span id="appareil" class="infoexif"> Canon 60D </span></p>
+                                <p class="pexif"> Objectif : <span id="objectif" class="infoexif"> 70-200 F2.8L </span></p>
+                                <p class="pexif"> Autres : <span id="autres" class="infoexif"> </br>F2.8 </br> 1/60s </br> ISO 200 <br> Flash : Non </br> 135mm </span></p>
                             </div>
-                            <form id='form02'>
-                                <h5>Votre Pseudo:</h5><input type="text" id="pseudo02"><br>
-                                <textarea cols="50" rows="4" placeholder="Ecrivez un commentaire ici ! "
-                                    id="comment02"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="" id="coms2">
+                            <div id="Info1">
+                                <h2 class="th2"> Ti</h2>
+                                <h4 id="headcom1" class="th3"> Commentaires sur la photo</h4>
+                                <div>
+                                    <img src="https://loremflickr.com/550/320?random=1" alt="" id="albumpics" class="overlaypic w-100 h-100">
+                                </div>
+                                <div class="modal2" id="myModal2">
+
+                                    <img src="" class="modal-content2" id="myImg2" alt="">
+                                    <div class="closeMe">X</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div id="com1" class="comalbum">
+                            <div id="text-comm1">
+                                <h2 class="th3 comtitle"> Commentaires  </h2>
+                                <div id="coms02" class="container">
+                                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
+                                         tabindex="0" id="defil02">
+                                        <h4 class="pseudo">JeanDu58</h4>
+                                        <p>Super Photo , J'adore !</p>
+
+                                        <h4 class="pseudo">Brigitte</h4>
+                                        <p>Le bonheur ne s'acquiert pas, il ne réside pas dans les apparences, chacun
+                                            d'entre nous
+                                            le
+                                            construit
+                                            à chaque instant de sa vie avec son coeur.</p>
+
+                                        <h4 class="pseudo">wallah038</h4>
+                                        <p>Très Jolie ! </p>
+                                    </div>
+                                </div>
                                 <br>
-                                <input type="submit" class="btn btn-primary" value="Envoyer Commentaire">
-                                <a href="https://www.facebook.com/" class="links">
-                                    <input type="button" value="Facebook" class="btn btn-primary">
-                                </a>
+                                <form id='form02'>
+                                    <h5>Votre Pseudo:</h5><input type="text" id="pseudo02"><br>
+                                    <textarea cols="40" rows="4" placeholder="Ecrivez un commentaire ici ! "
+                                              id="comment02"></textarea>
+                                    <br>
+                                    <input type="submit" class="btn btn-primary" value="Envoyer Commentaire">
+                                    <a href="https://www.facebook.com/" class="links">
+                                        <input type="button" value="Facebook" class="btn btn-primary">
+                                    </a>
 
-                                <a href="https://twitter.com/?lang=fr" class="links">
-                                    <input type="button" value="Twitter" class="btn btn-info">
-                                </a>
+                                    <a href="https://twitter.com/?lang=fr" class="links">
+                                        <input type="button" value="Twitter" class="btn btn-info">
+                                    </a>
 
-                                <a href="https://www.instagram.com/?hl=fr" class="links">
-                                    <input type="button" value="Instagram" class="btn btn-secondary">
-                                </a>
+                                    <a href="https://www.instagram.com/?hl=fr" class="links">
+                                        <input type="button" value="Instagram" class="btn btn-secondary">
+                                    </a>
 
-                                <a href="https://www.pinterest.fr/" class="links">
-                                    <input type="button" value="Pinterest" class="btn btn-danger">
-                                </a>
-                            </form>
+                                    <a href="https://www.pinterest.fr/" class="links">
+                                        <input type="button" value="Pinterest" class="btn btn-danger">
+                                    </a>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -332,7 +349,7 @@
                     </div>
                     <div id="coms01" class="container">
                         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0"
-                            id="defil01">
+                             id="defil01">
                             <h4 class="pseudo">JeanDu58</h4>
                             <p>Super Photo , J'adore !</p>
 
@@ -352,7 +369,7 @@
                             <form id='form01'>
                                 <h5>Votre Pseudo:</h5><input type="text" id="pseudo01"><br>
                                 <textarea cols="50" rows="4" placeholder="Ecrivez un commentaire ici ! "
-                                    id="comment01"></textarea>
+                                          id="comment01"></textarea>
                                 <br>
                                 <input type="submit" class="btn btn-primary" value="Envoyer Commentaire">
                                 <a href="https://www.facebook.com/" class="links">
