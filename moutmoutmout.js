@@ -22,11 +22,11 @@ $(window).ready(function () {
 
     // Modal zoom
     $('.overlaypic').click(function () {
-        $('.modal').show()
-        $('.modal-content').attr("src", $(this).attr('src'))
+        $('.modal1').show()
+        $('.modal-content1').attr("src", $(this).attr('src'))
     })
     $('.closeMe').click(function () {
-        $('.modal').hide()
+        $('.modal1').hide()
     })
     $(document).keydown(function (event) {
         if (event.keyCode == 27) {
@@ -46,6 +46,11 @@ $(window).ready(function () {
             $('.overlay').hide()
         }
     })
+
+    $('.closeMe').click(function () {
+        $('.modal').hide()
+    })
+
 
     $('#inscription').submit(function (event) {
         event.preventDefault()
@@ -363,6 +368,12 @@ function submitForm(event) {
         alert('Tous les champs sont obligatoires')
     }
 }
+
+//Surprise chieur
+
+$('#connard').click(() => {
+    alert('Agrandis ta page connard')
+})
 
 //Profil
 $('#btnProfil').click(() => {

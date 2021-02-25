@@ -11,6 +11,7 @@
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="moutmout.css">
 </head>
+
 <body>
     <header>
         <h1 style="text-align: center"> Rudy Wall Art </h1>
@@ -22,21 +23,19 @@
                             <a class="nav-link" href="index.html"><i class="fas fa-home fa-lg"></i></a>
                         </div>
                     </div>
-                    <button class="navbar-toggler nav-link" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                     <button class="navbar-toggler" id='connard' type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <div class="nav-link">
                             <i class="fas fa-angle-double-down"></i>
                         </div>
                     </button>
                     <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="collapse navbar-collapse">
                             <div class="col-12 row d-flex justify-content-around">
                                 <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
                                     <ul>
                                         <li class="nav-item dropdown">
-                                            <button type="button" class="btn accordeon-expand-btn bouton" id="btnProfil"
-                                                data-bs-target="#aboutMe" aria-expanded="false" aria-controls="aboutMe">
+                                            <button type="button" class="btn bouton" data-toggle="modal"
+                                                data-target="#ProfilModal">
                                                 <span data-bs-toggle="tooltip" data-bs-placement="right"
                                                     title="A propos de moi"> <i
                                                         class="far fa-address-card fa-lg"></i></span>
@@ -113,9 +112,8 @@
                                 <div class="accordeon-expand-content nav-item col-12 col-md-1 d-sm-flex">
                                     <ul>
                                         <li>
-                                            <button type="button" class="btn accordeon-expand-btn bouton"
-                                                id="btnContact" data-bs-target="#themeMenu" aria-expanded="false"
-                                                aria-controls="themeMenu">
+                                            <button type="button" class="btn bouton" data-toggle="modal"
+                                                data-target="#ContactModal">
                                                 <span data-bs-toggle="tooltip" data-bs-placement="right" title="Thèmes">
                                                     <i class="far fa-envelope fa-lg"></i></span>
                                             </button>
@@ -243,9 +241,9 @@
                     <div class="mySlides">
                         <img src="https://loremflickr.com/550/320?random=18" class="overlaypic Limg">
                     </div>
-                    <div class="modal" id="myModal">
+                    <div class="modal1" id="myModal">
 
-                        <img src="" class="modal-content" id="myImg" alt="">
+                        <img src="" class="modal-content1" id="myImg" alt="">
                         <div class="closeMe">X</div>
                     </div>
                 </div>
@@ -267,8 +265,10 @@
                             <div class="exifalbum">
                                 <p class="pexif"> Date : <span id="date" class="infoexif"> 10/02/2021 </span></p>
                                 <p class="pexif"> Appareil : <span id="appareil" class="infoexif"> Canon 60D </span></p>
-                                <p class="pexif"> Objectif : <span id="objectif" class="infoexif"> 70-200 F2.8L </span></p>
-                                <p class="pexif"> Autres : <span id="autres" class="infoexif"> </br>F2.8 </br> 1/60s </br> ISO 200 <br> Flash : Non </br> 135mm </span></p>
+                                <p class="pexif"> Objectif : <span id="objectif" class="infoexif"> 70-200 F2.8L </span>
+                                </p>
+                                <p class="pexif"> Autres : <span id="autres" class="infoexif"> </br>F2.8 </br> 1/60s
+                                        </br> ISO 200 <br> Flash : Non </br> 135mm </span></p>
                             </div>
                         </div>
                     </div>
@@ -278,7 +278,8 @@
                                 <h2 class="th2"> Ti</h2>
                                 <h4 id="headcom1" class="th3"> Commentaires sur la photo</h4>
                                 <div>
-                                    <img src="https://loremflickr.com/550/320?random=1" alt="" id="albumpics" class="overlaypic w-100 h-100">
+                                    <img src="https://loremflickr.com/550/320?random=1" alt="" id="albumpics"
+                                        class="overlaypic w-100 h-100">
                                 </div>
                                 <div class="modal2" id="myModal2">
 
@@ -292,10 +293,10 @@
                     <div class="col-4">
                         <div id="com1" class="comalbum">
                             <div id="text-comm1">
-                                <h2 class="th3 comtitle"> Commentaires  </h2>
+                                <h2 class="th3 comtitle"> Commentaires </h2>
                                 <div id="coms02" class="container">
                                     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
-                                         tabindex="0" id="defil02">
+                                        tabindex="0" id="defil02">
                                         <h4 class="pseudo">JeanDu58</h4>
                                         <p>Super Photo , J'adore !</p>
 
@@ -314,7 +315,7 @@
                                 <form id='form02'>
                                     <h5>Votre Pseudo:</h5><input type="text" id="pseudo02"><br>
                                     <textarea cols="40" rows="4" placeholder="Ecrivez un commentaire ici ! "
-                                              id="comment02"></textarea>
+                                        id="comment02"></textarea>
                                     <br>
                                     <input type="submit" class="btn btn-primary" value="Envoyer Commentaire">
                                     <a href="https://www.facebook.com/" class="links">
@@ -346,7 +347,7 @@
                     </div>
                     <div id="coms01" class="container">
                         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0"
-                             id="defil01">
+                            id="defil01">
                             <h4 class="pseudo">JeanDu58</h4>
                             <p>Super Photo , J'adore !</p>
 
@@ -366,7 +367,7 @@
                             <form id='form01'>
                                 <h5>Votre Pseudo:</h5><input type="text" id="pseudo01"><br>
                                 <textarea cols="50" rows="4" placeholder="Ecrivez un commentaire ici ! "
-                                          id="comment01"></textarea>
+                                    id="comment01"></textarea>
                                 <br>
                                 <input type="submit" class="btn btn-primary" value="Envoyer Commentaire">
                                 <a href="https://www.facebook.com/" class="links">
@@ -391,27 +392,50 @@
             </div>
         </div>
         <!-- Contact -->
-        <div class="container h-75 i18" id="form" style="display: none">
-            <form method="POST" id="formContact" href="mailto:rudyartwall@gmail.com">
-                <strong> Sélectionnez un sujet : </strong><select>
-                    <option>Demander un devis</option>
-                    <option>Demander un mot de passe et un identifiant</option>
-                    <option>Demander des informations</option>
-                    <option>Autre demande</option>
-                </select><br><br>
+        <div class="modal fade" id="ContactModal" role="dialog" aria-labelledby="ContactModalLabel" aria-hidden="true">
+            <div class="modal-dialog i5" role="document">
+                <div class="modal-content">
+                    <form method="POST" id="formContact" href="mailto:rudyartwall@gmail.com">
+                        <strong> Sélectionnez un sujet : </strong><select>
+                            <option>Demander un devis</option>
+                            <option>Demander un mot de passe et un identifiant</option>
+                            <option>Demander des informations</option>
+                            <option>Autre demande</option>
+                        </select><br><br>
 
-                <input id="prenom" type="text" placeholder="Votre prénom">
-                <input id="nom" type="text" placeholder="Votre nom">
-                <input id="adresseMail" type="text" placeholder="Votre email"><br><br>
-
-                <textarea id="msg" placeholder="Rédigez votre message" rows="4" cols="60"></textarea><br>
-
-                <input type="checkbox" name="confirmAge"><strong> Je certifie avoir plus de 18 ans</strong><br><br>
-
-                <button id="btnSubmitForm">Envoyer ma demande</button>
-            </form>
+                        <input id="prenom" type="text" placeholder="Votre prénom">
+                        <input id="nom" type="text" placeholder="Votre nom">
+                        <input id="adresseMail" type="text" placeholder="Votre email"><br><br>
+                        <textarea id="msg" placeholder="Rédigez votre message" rows="4" cols="60"></textarea><br>
+                        <input type="checkbox" name="confirmAge"><strong> Je certifie avoir plus de 18
+                            ans</strong><br><br>
+                        <button id="btnSubmitForm">Envoyer ma demande</button>
+                    </form>
+                </div>
+            </div>
         </div>
         <!-- Profil -->
+        <div class="modal fade" id="ProfilModal" role="dialog" aria-labelledby="ProfilModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg i5" role="document">
+                <div class="modal-content">
+                    <div id="biographie">
+                        <div class="infosbio wrapper">
+                            <div class="left">
+                                <img src="photoprofil.jpg" id="imgProfil">
+                                <h4>Rudy</h4>
+                                <p>Photographe</p>
+                            </div>
+                            <div class='right'>
+                                <p>A propos de moi :</p>
+                                <textarea placeholder="Que voulez vous dire aux autres ?" class='txtpfl' rows="5"
+                                    cols="80"></textarea><br>
+                                <input type="button" value="Enregistrer" id='registerbtn'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="biographie" style="display: none;">
             <div class="infosbio wrapper">
                 <div class="left">
@@ -439,7 +463,7 @@
         <div class="containere row">
             <div id="carouselExampleControls" class="carousel slide slut" data-bs-ride="carousel">
                 <div class="carousel-inner grosfdp">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active a8">
                         <img src="https://loremflickr.com/180/120?random=1" class="imgfoot demo cursor Simg"
                             onclick="currentSlide(1)">
                         <img src="https://loremflickr.com/180/120?random=2" class="imgfoot demo cursor Simg"
@@ -453,7 +477,7 @@
                         <img src="https://loremflickr.com/180/120?random=6" class="imgfoot demo cursor Simg"
                             onclick="currentSlide(6)">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item a8">
                         <img src="https://loremflickr.com/180/120?random=7" class="imgfoot demo cursor Simg"
                             onclick="currentSlide(7)">
                         <img src="https://loremflickr.com/180/120?random=8" class="imgfoot demo cursor Simg"
@@ -467,7 +491,7 @@
                         <img src="https://loremflickr.com/180/120?random=12" class="imgfoot demo cursor Simg"
                             onclick="currentSlide(12)">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item a8">
                         <img src="https://loremflickr.com/180/120?random=13" class="imgfoot demo cursor Simg"
                             onclick="currentSlide(13)">
                         <img src="https://loremflickr.com/180/120?random=14" class="imgfoot demo cursor Simg"
