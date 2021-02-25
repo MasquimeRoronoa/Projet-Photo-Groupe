@@ -7,7 +7,6 @@ $(window).ready(function () {
     var titre1 = $('#bite1')
     var definition = $('#headcom')
     var definition1 = $('#headcom1')
-    var bio = $('#biographie')
     var th2 = $('.th2')
     var coms2 = $('#coms2')
     var pseudo = $('#pseudo').val()
@@ -46,12 +45,6 @@ $(window).ready(function () {
             $('.overlay').hide()
         }
     })
-
-    $('.closeMe').click(function () {
-        $('.modal').hide()
-    })
-
-
     $('#inscription').submit(function (event) {
         event.preventDefault()
         var password = $('#passworde').val()
@@ -158,9 +151,6 @@ $(window).ready(function () {
         if (coms.show()) {
             coms.hide()
         }
-        if (contact.show()) {
-            contact.hide()
-        }
     })
     $('#thdr, #hklk, #hs, #studio, #pl, #ts, #lp, #nb, #portrait, #paysage, #architecture, #graphisme, #evenements, #private').click(function (event) {
         if (album.show()) {
@@ -169,14 +159,6 @@ $(window).ready(function () {
         }
         if (coms.hide()) {
             coms.show()
-        }
-        if (bio.show()) {
-            bio.hide()
-            $('#contain').show()
-            $('#footer').show()
-        }
-        if (contact.show()) {
-            contact.hide()
         }
         coms.addClass("rightcolumn")
     })
@@ -260,7 +242,7 @@ $(window).ready(function () {
                 alert("Content de te revoir")
                 $('#connect').html("Vous êtes connecté sous le nom de " + pseudo)
             } else {
-                alert("Il faut demander des identifiants")
+                alert("Il faut demander des identifiants, veuillez contacter un administrateur")
                 $('#contain').hide()
                 $('#form').show()
             }
@@ -276,7 +258,6 @@ $('.Tsombre').click((event) => {
     $('.navbar').css('background', '#939598')
     $('footer').css('background', '#939598')
     $('#form').css('background', '#939598')
-    $('.i18').css('box-shadow', '20px 20px 20px dimgrey')
 })
 
 $('.Tsemi').click((event) => {
@@ -343,14 +324,6 @@ $('#form02').submit(function (event) {
     }
 })
 
-//formContact
-$('#btnContact').click(() => {
-    $('#contain').hide()
-    $('#footer').hide()
-    $('#biographie').hide()
-    $('#form').show()
-})
-
 $('#formContact').submit(submitForm)
 
 function submitForm(event) {
@@ -375,13 +348,6 @@ $('#connard').click(() => {
     alert('Agrandis ta page connard')
 })
 
-//Profil
-$('#btnProfil').click(() => {
-    $('#contain').hide()
-    $('#footer').hide()
-    $('#form').hide()
-    $('#biographie').show()
-})
 var slideIndex = 1;
 showSlides(slideIndex);
 
