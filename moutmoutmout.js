@@ -56,10 +56,12 @@ $(window).ready(function () {
     // Modal zoom
     $('.overlaypic').click(function () {
         $('.modal1').show()
+        $("#footer").hide()
         $('.modal-content1').attr("src", $(this).attr('src'))
     })
     $('.closeMe').click(function () {
         $('.modal1').hide()
+        $("#footer").show()
     })
     $(document).keydown(function (event) {
         if (event.keyCode == 27) {
@@ -69,10 +71,12 @@ $(window).ready(function () {
 
     $('.overlaypic').click(function () {
         $('.modal2').show()
+        $("#footer").hide()
         $('.modal-content2').attr("src", $(this).attr('src'))
     })
     $('.closeMe').click(function () {
         $('.modal2').hide()
+        $("#footer").show()
     })
     $(document).keydown(function (event) {
         if (event.keyCode == 27) {
