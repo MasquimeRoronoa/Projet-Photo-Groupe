@@ -64,6 +64,7 @@ function loadActualizedWebsite(deviceType, orientation) {
                 $(".accordion").hide()
                 $(".sidenavtab").show()
                 $(".btnclose").show()
+                $("#footer").hide()
                 $(".btnclose").click(function (event) {
                     event.preventDefault()
                     $(".sidenavtab").hide()
