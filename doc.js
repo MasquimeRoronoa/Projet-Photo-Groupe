@@ -59,12 +59,12 @@ function loadActualizedWebsite(deviceType, orientation) {
             console.log(" vous etes sur un smartphone en mode paysage !")
             $(".navbar").hide()
             $(".accordion").show()
+            $("#footer").hide()
             $(".accordion").click(function (event) {
                 event.preventDefault()
                 $(".accordion").hide()
                 $(".sidenavtab").show()
                 $(".btnclose").show()
-                $("#footer").hide()
                 $(".btnclose").click(function (event) {
                     event.preventDefault()
                     $(".sidenavtab").hide()
