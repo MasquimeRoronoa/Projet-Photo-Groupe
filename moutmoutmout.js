@@ -1,13 +1,11 @@
 $(window).ready(function () {
     var private = $('#private')
-    var album = $('#fdpalbum')
+    var album = $('#lalbum')
     var pimg = $('#pimg')
     var coms = $('#coms')
-    var titre = $('#bite')
-    var titre1 = $('#bite1')
+    var titre = $('#amour')
     var definition = $('#headcom')
     var definition1 = $('#headcom1')
-    var bio = $('#biographie')
     var th2 = $('.th2')
     var coms2 = $('#coms2')
     var pseudo = $('#pseudo').val()
@@ -22,11 +20,11 @@ $(window).ready(function () {
 
     // Modal zoom
     $('.overlaypic').click(function () {
-        $('.modal').show()
-        $('.modal-content').attr("src", $(this).attr('src'))
+        $('.modal1').show()
+        $('.modal-content1').attr("src", $(this).attr('src'))
     })
     $('.closeMe').click(function () {
-        $('.modal').hide()
+        $('.modal1').hide()
     })
     $(document).keydown(function (event) {
         if (event.keyCode == 27) {
@@ -46,7 +44,6 @@ $(window).ready(function () {
             $('.overlay').hide()
         }
     })
-
     $('#inscription').submit(function (event) {
         event.preventDefault()
         var password = $('#passworde').val()
@@ -153,9 +150,6 @@ $(window).ready(function () {
         if (coms.show()) {
             coms.hide()
         }
-        if (contact.show()) {
-            contact.hide()
-        }
     })
     $('#thdr, #hklk, #hs, #studio, #pl, #ts, #lp, #nb, #portrait, #paysage, #architecture, #graphisme, #evenements, #private').click(function (event) {
         if (album.show()) {
@@ -165,48 +159,33 @@ $(window).ready(function () {
         if (coms.hide()) {
             coms.show()
         }
-        if (bio.show()) {
-            bio.hide()
-            $('#contain').show()
-            $('#footer').show()
-        }
-        if (contact.show()) {
-            contact.hide()
-        }
         coms.addClass("rightcolumn")
     })
     $('#animo').click(function (event) {
-        titre1.text("")
         th2.text('Animaux')
         definition1.text("Quel belle animal")
     })
     $('#saison').click(function (event) {
-        titre1.text("")
         th2.text('Saison')
         definition1.text("Automne / Eté / Hiver / Printemps")
     })
     $('#fetes').click(function (event) {
-        titre1.text("")
         th2.text('Fêtes')
         definition1.text("Bar-mitzvah ?")
     })
     $('#nature').click(function (event) {
-        titre1.text("")
         th2.text('Nature')
         definition1.text("La nature dans toute sa splendeur")
     })
     $('#urbain').click(function (event) {
-        titre1.text("")
         th2.text('Urbain')
         definition1.text("Street Art")
     })
     $('#sport').click(function (event) {
-        titre1.text("")
         th2.text('Sport')
         definition1.text("Shaq'in fool")
     })
     $('#nuit').click(function (event) {
-        titre1.text("")
         th2.text('Nuit')
         definition1.text("C'est joli même de nuit")
     })
@@ -255,7 +234,7 @@ $(window).ready(function () {
                 alert("Content de te revoir")
                 $('#connect').html("Vous êtes connecté sous le nom de " + pseudo)
             } else {
-                alert("Il faut demander des identifiants")
+                alert("Il faut demander des identifiants, veuillez contacter un administrateur")
                 $('#contain').hide()
                 $('#form').show()
             }
@@ -271,7 +250,6 @@ $('.Tsombre').click((event) => {
     $('.navbar').css('background', '#939598')
     $('footer').css('background', '#939598')
     $('#form').css('background', '#939598')
-    $('.i18').css('box-shadow', '20px 20px 20px dimgrey')
 })
 
 $('.Tsemi').click((event) => {
@@ -338,14 +316,6 @@ $('#form02').submit(function (event) {
     }
 })
 
-//formContact
-$('#btnContact').click(() => {
-    $('#contain').hide()
-    $('#footer').hide()
-    $('#biographie').hide()
-    $('#form').show()
-})
-
 $('#formContact').submit(submitForm)
 
 function submitForm(event) {
@@ -364,13 +334,12 @@ function submitForm(event) {
     }
 }
 
-//Profil
-$('#btnProfil').click(() => {
-    $('#contain').hide()
-    $('#footer').hide()
-    $('#form').hide()
-    $('#biographie').show()
+//Surprise chieur
+
+$('#mignon').click(() => {
+    alert('Agrandis ta page mon mignon')
 })
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
