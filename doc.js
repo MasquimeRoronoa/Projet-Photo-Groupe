@@ -39,6 +39,7 @@ function loadActualizedWebsite(deviceType, orientation) {
         case 'PCPO':
             // DO stuff
             console.log(" vous etes sur un pc en mode portrait !")
+            $("div").removeClass("leftcolumn rightcolumn col-6 col-4 col-2")
             break;
             // PC Paysage
         case 'PCLA':
@@ -49,21 +50,42 @@ function loadActualizedWebsite(deviceType, orientation) {
         case 'MOPO':
             // DO stuff
             console.log(" vous etes sur un smartphone en mode portrait !")
+            $("div").removeClass("leftcolumn rightcolumn col-6 col-4 col-2")
             break;
             // Mobile Paysage
         case 'MOLA':
             // DO stuff
+
             console.log(" vous etes sur un smartphone en mode paysage !")
+            $(".navbar").hide()
+            $(".accordion").show()
+            $(".accordion").click(function (event) {
+                event.preventDefault()
+                $(".accordion").hide()
+                $(".sidenavtab").show()
+                $(".btnclose").show()
+                $(".btnclose").click(function (event) {
+                    event.preventDefault()
+                    $(".sidenavtab").hide()
+                    $(".accordion").show()
+                })
+            })
+
+            $("div").removeClass("leftcolumn rightcolumn col-6 col-4 col-2")
             break;
             // Tablet Portrait
         case 'TAPO':
             // DO stuff
             console.log(" vous etes sur une tablette en mode portrait !")
+            $("div").removeClass("leftcolumn rightcolumn col-6 col-4 col-2")
             break;
             // Tablet Paysage
         case 'TALA':
             // DO stuff
             console.log(" vous etes sur une tablette en mode paysage !")
+            $(".navbar").hide()
+            $(".sidenavtab").show()
+            $("div").removeClass("leftcolumn rightcolumn col-6 col-4 col-2")
             break;
         default:
             alert("Ho dude, You're the matrix");

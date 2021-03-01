@@ -591,3 +591,121 @@ input {
     text-align: center;
     color: black;
 }
+
+.sidenavtab {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenavtab a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.sidenavtab a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+
+.main {
+    margin-left: 200px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+. allezlens {
+    background-color: green;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+i {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenavtab {padding-top: 15px;}
+    .sidenavtab a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 7%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 10%;
+    height: 10%;
+    color: white;
+}
+
+#imgaccordion {
+    color: white;
+    background-color: black;
+}
+
+#accordionleft {
+    float: left;
+}
+
+#accordionright {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+

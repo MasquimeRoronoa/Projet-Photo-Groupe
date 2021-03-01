@@ -13,6 +13,60 @@ $(window).ready(function () {
     var albumpics = $("#albumpics")
     var contact = $('#form')
 
+    $(".sidenavtab").hide()
+    $(".accordion").hide()
+    $(".btnclose").hide()
+
+
+
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            $(".sidenavtab").show()
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+
+
+
+
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     $('.imgfoot').click(function () {
         $('#albumpics').show()
         $('#albumpics').attr("src", $(this).attr('src'))
@@ -85,64 +139,64 @@ $(window).ready(function () {
         }
 
     })
-    $('#thdr').click(function (event) {
+    $('.thdr').click(function (event) {
         titre.text("HDR")
         definition.text("HDR c'est marrant")
     })
-    $('#hklk').click(function (event) {
+    $('.hklk').click(function (event) {
         titre.text("High Key / Low Key")
         definition.text("Contraste de couleur oh oh")
     })
-    $('#hs').click(function (event) {
+    $('.hs').click(function (event) {
         titre.text("High Speed")
         definition.text("Equivalent de la drogue")
     })
-    $('#studio').click(function (event) {
+    $('.studio').click(function (event) {
         titre.text("Studio")
         definition.text("Lieu ou tu peux vivre")
     })
-    $('#pl').click(function (event) {
+    $('.pl').click(function (event) {
         titre.text("Pose Longue")
         definition.text("Une pose s'impause")
     })
-    $('#ts').click(function (event) {
+    $('.ts').click(function (event) {
         titre.text("Tilt Shift")
         definition.text("Tilte Shifteux")
     })
-    $('#lp').click(function (event) {
+    $('.lp').click(function (event) {
         titre.text("Light Painting")
         definition.text("Peinture claire")
     })
-    $('#nb').click(function (event) {
+    $('.nb').click(function (event) {
         titre.text("Noir et Blanc")
         definition.text("Mélange de couleur oh oh")
     })
-    $('#portrait').click(function (event) {
+    $('.portrait').click(function (event) {
         titre.text("Portrait")
         definition.text("Visage de profil")
     })
-    $('#paysage').click(function (event) {
+    $('.paysage').click(function (event) {
         titre.text("Paysage")
         definition.text("Pas de profil")
     })
-    $('#architecture').click(function (event) {
+    $('.architecture').click(function (event) {
         titre.text("Architecture")
         definition.text("Batiment")
     })
-    $('#graphisme').click(function (event) {
+    $('.graphisme').click(function (event) {
         titre.text("Graphisme")
         definition.text("Gramisme")
     })
-    $('#evenements').click(function (event) {
+    $('.evenements').click(function (event) {
         titre.text("Evenements")
         definition.text("Mariage ?")
     })
-    $('#private').click(function (event) {
+    $('.private').click(function (event) {
         titre.text("Boudoire")
         definition.text("Non")
 
     })
-    $('#animo, #saison, #fetes, #nature, #urbain, #sport, #nuit').click(function (event) {
+    $('.animo, .saison, .fetes, .nature, .urbain, .sport, .nuit').click(function (event) {
         if (album.hide()) {
             album.show()
             pimg.hide()
@@ -151,7 +205,7 @@ $(window).ready(function () {
             coms.hide()
         }
     })
-    $('#thdr, #hklk, #hs, #studio, #pl, #ts, #lp, #nb, #portrait, #paysage, #architecture, #graphisme, #evenements, #private').click(function (event) {
+    $('.thdr, .hklk, .hs, .studio, .pl, .ts, .lp, .nb, .portrait, .paysage, .architecture, .graphisme, .evenements, .private').click(function (event) {
         if (album.show()) {
             album.hide()
             pimg.show()
@@ -161,31 +215,31 @@ $(window).ready(function () {
         }
         coms.addClass("rightcolumn")
     })
-    $('#animo').click(function (event) {
+    $('.animo').click(function (event) {
         th2.text('Animaux')
         definition1.text("Quel belle animal")
     })
-    $('#saison').click(function (event) {
+    $('.saison').click(function (event) {
         th2.text('Saison')
         definition1.text("Automne / Eté / Hiver / Printemps")
     })
-    $('#fetes').click(function (event) {
+    $('.fetes').click(function (event) {
         th2.text('Fêtes')
         definition1.text("Bar-mitzvah ?")
     })
-    $('#nature').click(function (event) {
+    $('.nature').click(function (event) {
         th2.text('Nature')
         definition1.text("La nature dans toute sa splendeur")
     })
-    $('#urbain').click(function (event) {
+    $('.urbain').click(function (event) {
         th2.text('Urbain')
         definition1.text("Street Art")
     })
-    $('#sport').click(function (event) {
+    $('.sport').click(function (event) {
         th2.text('Sport')
         definition1.text("Shaq'in fool")
     })
-    $('#nuit').click(function (event) {
+    $('.nuit').click(function (event) {
         th2.text('Nuit')
         definition1.text("C'est joli même de nuit")
     })
