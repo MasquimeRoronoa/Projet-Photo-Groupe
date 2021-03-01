@@ -58,17 +58,28 @@ function loadActualizedWebsite(deviceType, orientation) {
 
             console.log(" vous etes sur un smartphone en mode paysage !")
             $(".navbar").hide()
-            $(".accordion").show()
+            $("#accordionright").show()
+            $("#accordionleft").show()
             $("#footer").hide()
-            $(".accordion").click(function (event) {
+            $("#accordionleft").click(function (event) {
                 event.preventDefault()
-                $(".accordion").hide()
+                $("#accordionleft").hide()
                 $(".sidenavtab").show()
                 $(".btnclose").show()
                 $(".btnclose").click(function (event) {
                     event.preventDefault()
                     $(".sidenavtab").hide()
-                    $(".accordion").show()
+                    $("#accordionleft").show()
+                })
+            })
+            $("#accordionright").click(function () {
+                $("#accordionright").hide()
+                $(".leftfoot").show()
+                $(".btncloseslide").show()
+                $(".btncloseslide").click(function (event) {
+                    event.preventDefault()
+                    $(".leftfoot").hide()
+                    $("#accordionright").show()
                 })
             })
 
@@ -85,7 +96,17 @@ function loadActualizedWebsite(deviceType, orientation) {
             // DO stuff
             console.log(" vous etes sur une tablette en mode paysage !")
             $(".navbar").hide()
+            $("#footer").hide()
+            $(".leftfoot").show()
+            $(".slide1").show()
             $(".sidenavtab").show()
+            $(".btnprev").click(function (event) {
+                event.preventDefault()
+                if(slide1.show()){
+                    slide1.hide()
+                    slide3.show()
+                }
+            })
             $("div").removeClass("leftcolumn rightcolumn col-6 col-4 col-2")
             break;
         default:

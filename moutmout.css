@@ -700,12 +700,18 @@ i {
     float: right;
 }
 
+.leftfoot {
+    float: right;
+    margin-right: 1%;
+    position: absolute;
+    right: 0;
+    margin-left: 0;
+    text-align: center;
+}
 
 
-
-
-
-
-
+li {
+    margin: 3%;
+}
 
 

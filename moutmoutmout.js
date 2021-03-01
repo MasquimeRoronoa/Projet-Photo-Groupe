@@ -12,10 +12,21 @@ $(window).ready(function () {
     var comment = $('#comment').val()
     var albumpics = $("#albumpics")
     var contact = $('#form')
+    var slide1 = $(".slide1")
+    var slide2 = $(".slide2")
+    var slide3 = $(".slide3")
+
+
 
     $(".sidenavtab").hide()
     $(".accordion").hide()
     $(".btnclose").hide()
+    $(".slide2").hide()
+    $('.slide3').hide()
+    $(".leftfoot").hide()
+    $(".btncloseslide").hide()
+
+
 
 
 
@@ -34,36 +45,6 @@ $(window).ready(function () {
             }
         });
     }
-
-
-
-
-
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
